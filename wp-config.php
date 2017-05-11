@@ -23,7 +23,7 @@ define('FS_METHOD', 'direct');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'kyligence');
+define('DB_NAME', 'kyligence4');
 
 /** MySQL database username */
 define('DB_USER', 'superadmin');

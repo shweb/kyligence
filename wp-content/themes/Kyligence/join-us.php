@@ -12,5 +12,5 @@
     <?php echo $skills_yo; ?>
 </div>
     <div class="create"><?php the_time('Y/m/d'); ?></div>
-    <div class="apply"><a href="mailto:joinus@kyligence.io" style="border-radius: 25px;padding:7px 20px; background-color: #146db3;color:#fff">APPLY</a></div>
+    <div class="apply"><a href="mailto:joinus@kyligence.io" style="border-radius: 25px;padding:7px 20px; background-color: #76aede;color:black;">APPLY</a></div>
 </li>

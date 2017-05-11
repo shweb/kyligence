@@ -7,81 +7,97 @@
 get_header();
 ?>
 <style>
-.vc_btn3.vc_btn3-color-sky.vc_btn3-style-outline {
-    color: #5AA1E3;
-    border-color: #5AA1E3;
-    background-color: transparent;
+  tr{
+	border-bottom:5px solid white;
+  }
+  .learn_more{text-align:left;    display: block;
+    min-height: 50px;}
+  a.older{padding: 11px 35px; 
+	border: 1px solid #5AA1E3; color:#5AA1E3;border-radius:4px;
+    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/arrow.png');
+    background-repeat: no-repeat;
+    background-position: -13px -1px; 
+  }
+  a.older:hover , :active .older{padding: 11px 35px;
+	border: 1px solid #5AA1E3;
+  	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/arrow_hover.png');
+    background-repeat: no-repeat;
+    background-position:-1px 3px; 
+	background-color:#5AA1E3;
+	color:#fff;
+  }
+  .chevron{
+	  position: absolute;
+	  width: 20px;
+	  content: " ";
+	  background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chvr.png');
+	  height: 19px;
+	  background-position: -4px 28px;
+	  display: inline-block;
+	  left: 17px;
+  }
+  button:hover .chevron{
+	position: absolute;
+	width: 20px;
+	content: " ";
+	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chevr-hover.png');
+    height: 19px;
+	background-position: -4px 28px;
+	display: inline-block;
+	left: 17px;
 }
-.vc_btn3.vc_btn3-size-md.vc_btn3-style-outline, .vc_btn3.vc_btn3-size-md.vc_btn3-style-outline-custom {
-    padding: 13px 19px;
-	margin-bottom: 30px !important;
+  	.eyes{
+	  position: absolute;
+	  width: 25px;
+	  content: " ";
+	  background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/eyes.png');
+	  height: 19px;
+	  background-position: -10px 33px;
+	  display: inline-block;
+	  left: 17px;
 }
-
-.vc_btn3.vc_btn3-color-sky, .vc_btn3.vc_btn3-color-sky.vc_btn3-style-flat {
-    width: 200px;
+  button:hover .eyes{
+	position: absolute;
+	width: 25px;
+	content: " ";
+	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/eyes-hover.png');
+    height: 19px;
+	background-position: -10px 33px;
+	display: inline-block;
+	left: 17px;
 }
-.vc_btn3.vc_btn3-shape-square {
-    border-radius: 0;
-}
-.vc_btn3.vc_btn3-style-outline, .vc_btn3.vc_btn3-style-outline-custom, .vc_btn3.vc_btn3-style-outline-custom:focus, .vc_btn3.vc_btn3-style-outline-custom:hover, .vc_btn3.vc_btn3-style-outline:focus, .vc_btn3.vc_btn3-style-outline:hover {
-    border-width: 2px;
-}
-.vc_btn3.vc_btn3-icon-left {
-    text-align: left;
-}
-.vc_btn3.vc_btn3-icon-left, .vc_btn3.vc_btn3-icon-right {
-    position: relative;
-}
-.vc_general.vc_btn3 {
-    display: inline-block;
-    margin-bottom: 0;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    background-color: transparent;
-    color: #5472D2;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: relative;
-    top: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    line-height: normal;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    font-size: 14px;
-    padding: 14px 20px;
-}
-.vc_btn3.vc_btn3-color-sky.vc_btn3-style-outline:hover {
-    color: #fff;
-    border-color: #5AA1E3;
-    background-color: #5AA1E3;
-}
+  
+  
 </style>
 <?php
-global $query;
 $taxonomy = 'news-room';
-$term_args = array('orderby' => 'name','order' => 'ASC');
+$term_args = array('orderby' => 'name','order' => 'Desc');
 $terms = get_terms($taxonomy,$term_args);
 if($terms) {
-    ?>
-    <section id="layout" class="dfd-default-template pages">
-        <div class="row boxed">
-            <div class="blog-section no-sidebars">
-                <section id="main-content" role="main" class="twelve columns">
-                    <div class="dfd-content-wrap dfd-page_simple isotope-columns-3 container">
-					<div style="margin: 20px 10px 30px 10px;">
-                      <h3 class="section-header-title" style="text-align: center;"><?php echo $terms[0]->name; ?></h3>
-                    </div>
-                        <table class="aligncenter" style="border:none !important;background:none;width:100%;">
-                            <tbody>
+  ?>
+<section style="margin-bottom:30px"  id="layout" class="dfd-default-template pages">
+            <div class="row boxed ">
+                <div class="blog-section no-sidebars">
+                    <section id="main-content" role="main" class="twelve columns">
+					  
+					  <div class="two columns vc-column-extra-class-59103a016f374" data-parallax_sense="30">
+                        <div class="wpb_wrapper"></div>
+                      </div>
+					  
+					  <div class="eight columns vc-column-extra-class-59103a016febe" data-parallax_sense="30">
+                         <div class="wpb_wrapper">
+                       
+						<div style="margin: 20px 10px 30px 0px;">
+						  
+                          <div style="margin: 0 auto 14px;width:400px;padding-left:94px;">
+                             <h3 class="section-header-title" style="text-align: left;">
+							   <?php echo $terms[1]->name; ?>
+						     </h3>
+						  </div>
+						  
+						  <div style="margin:0 auto;">
+                            <table class="aligncenter" style="border:none !important;background:none;width:52%;">
+                                <tbody>
                             <?php
                             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                             $args = array(
@@ -91,7 +107,7 @@ if($terms) {
                                 'tax_query' => array(
                                     array(
                                         'taxonomy' => 'news-room',
-                                        'terms' => array($terms[0]->term_id),
+                                        'terms' => array($terms[1]->term_id),
                                         'include_children' => true,
                                         'operator' => 'IN'
                                     )
@@ -105,7 +121,7 @@ if($terms) {
                                     ?>
                                     <tr style="background: none !important;">
                                         <td style="text-align: left; padding-left: 10px;"><?php the_time('Y/m/d'); ?></td>
-                                        <td style="text-align: left; padding-left: 200px;">
+                                        <td style="text-align: left; padding-left: 50px;">
                                             <a href="<?php echo $url; ?>">
                                                 <?php the_title(); ?>
                                             </a>
@@ -114,28 +130,135 @@ if($terms) {
                                 <?php endwhile;
                                 ?>
 
-                            <?php else : ?>
-                                <tr>
-                                    <td style="text-align: left; padding-left: 10px;"></td>
-                                    <td style="text-align: center;">
-                                        <?php _e('Sorry, no posts matched your criteria.'); ?>
-                                    </td>
-                                </tr>
-                            <?php endif; ?>
-                            </tbody>
-                        </table>
-                         
-					  <?php if ($query->max_num_pages>$paged) :?>
-						<div class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-icon-left vc_btn3-color-sky" style="margin: 20px 10px 0px 363px;">
-	                        <?php echo get_next_posts_link( 'Next Page', $query->max_num_pages ); ?>
-						</div>
-					  <?php endif;?>
-                   </div>
-                </section>
+								  <?php else : ?>
+									  <tr>
+										  <td style="text-align: left; padding-left: 10px;"></td>
+										  <td style="text-align: center;">
+											  <?php _e('Sorry, no posts matched your criteria.'); ?>
+										  </td>
+									  </tr>
+								  <?php endif; ?>
+                                </tbody>
+                            </table>                    
+	                        <?php if ($query->max_num_pages > $paged) :?>
+						    <div style="margin: 0 auto 14px;width:400px;padding-left:132px;">
+					  		   <div class="learn_more" style="width:150px">
+	                           <?php echo get_next_posts_link( 'Next Page', $query->max_num_pages );?>
+							  </div>	
+							</div>
+					        <?php endif;?>
+						  </div>
+						   </div>
+						 </div>
+                        </div>
+					  
+					  <div class="two columns vc-column-extra-class-59103a016f374" data-parallax_sense="30">
+                        <div class="wpb_wrapper"></div>
+                      </div>
+					  
+                    </section>
+                </div>
+            </div>
+        </section>
+        <?php
+}
+?>
+<div style="padding-left:0!important" class="dfd-content-wrap dfd-page_simple isotope-columns-3">
+    <div class="vc_row vc-row-wrapper vc_custom_1493975080723" data-parallax_sense="30"
+         style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="wpb_row row">
+            <div class="two columns vc-column-extra-class-59103a016f374" data-parallax_sense="30">
+                <div class="wpb_wrapper">
+
+                </div>
+            </div>
+
+            <div class="eight columns vc-column-extra-class-59103a016febe" data-parallax_sense="30">
+                <div class="wpb_wrapper">
+                    <div class="vc-row-wrapper vc_inner vc_row-fluid">
+                        <div class="row wpb_row">
+                            <div class="vc-column-hover-59103a0173e08 columns twelve">
+                                <div class="wpb_wrapper">
+                                    <div class="dfd-heading-shortcode">
+                                        <div style="opacity: 1; transform: translateY(0px);"
+                                             class="dfd-heading-module-wrap  text-center style_05 cr-animate-gen  animation-done"
+                                             id="dfd-heading-59103a0174efa"
+                                             data-animate-type="transition.slideDownBigIn">
+                                            <div class="inline-block">
+                                                <div class="dfd-heading-module">
+                                                    <h2 class="dfd-title "
+                                                        style="font-size: 45px; color: #333333 !important; line-height: 45px;margin-bottom: 14px;">
+                                                        Get started now !</h2>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">(function ($) {
+                                            $("head").append("<style>#dfd-heading-59103a0174efa .dfd-heading-module {}#dfd-heading-59103a0174efa .dfd-heading-delimiter {border-bottom-style: solid;width: 80px;border-bottom-width: 1px;border-bottom-color: #333333;}#dfd-heading-59103a0174efa .dfd-title {margin-top: 10px;margin-bottom: 80px;}#dfd-heading-59103a0174efa .dfd-heading-delimiter {margin-top: 10px;margin-bottom: 10px;}</style>");
+                                        })(jQuery);</script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc-row-wrapper vc_inner vc_row-fluid container">
+                        <div class="row wpb_row">
+                            <div class="vc-column-hover-59103a017635f columns four">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_btn3-container vc_btn3-center">
+                                        <button onmouseleave="this.style.borderColor='#333333'; this.style.backgroundColor='transparent'; this.style.color='#333333'"
+                                                onmouseenter="this.style.borderColor='#5aa1e3'; this.style.backgroundColor='#5aa1e3'; this.style.color='#ffffff';"
+                                                style="border-color: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: transparent;"
+                                                class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom vc_btn3-icon-left">
+												  <i class="chevron"></i>Learn more
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc-column-hover-59103a0180610 columns four">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_btn3-container vc_btn3-center">
+                                        <button onmouseleave="this.style.borderColor='#333333'; this.style.backgroundColor='transparent'; this.style.color='#333333'"
+                                                onmouseenter="this.style.borderColor='#5aa1e3'; this.style.backgroundColor='#5aa1e3'; this.style.color='#ffffff';"
+                                                style="border-color: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: transparent;"
+                                                class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom vc_btn3-icon-left">
+                                            <i class="eyes"></i> Watch Demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc-column-hover-59103a0181be0 columns four">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_btn3-container vc_btn3-center">
+                                        <button onmouseleave="this.style.borderColor='#333333'; this.style.backgroundColor='transparent'; this.style.color='#333333'"
+                                                onmouseenter="this.style.borderColor='#5aa1e3'; this.style.backgroundColor='#5aa1e3'; this.style.color='#ffffff';"
+                                                style="border-color: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: transparent;"
+                                                class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom vc_btn3-icon-left">
+                                            <i class="chevron"></i> Learn more
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="two columns vc-column-extra-class-59103a0183680" data-parallax_sense="30">
+                <div class="wpb_wrapper">
+
+                </div>
             </div>
         </div>
-    </section>
-    <?php
-}
+        <div class="dfd-row-bg-wrapper-cover">
+            <div class="dfd-row-bg-wrap dfd-row-bg-image dfd_simple_image" id="dfd-image-bg-59103a0183cc0"
+                 data-default-image="http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg"
+                 data-mobile_enable="1"></div>
+        </div>
+        <script type="text/javascript">(function ($) {
+            $("head").append("<style>#dfd-image-bg-59103a0183cc0 {background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg);background-repeat: repeat;background-size: cover;background-attachment: scroll;}</style>");
+        })(jQuery);</script>
+    </div>
+</div>
+<?php
 get_footer();
 ?>
