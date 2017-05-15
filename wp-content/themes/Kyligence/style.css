@@ -24,7 +24,13 @@ body .header-wrap .row ,
 .mega-menu > ul > li:last-child { }
 body .mega-menu > ul > li.current-menu-item:before, body .mega-menu > ul > li.current-menu-ancestor:before{ background: #fff !important;}
 .wpcf7 form.dfd_contact_form p:not(.form_button) input, .wpcf7 form.dfd_contact_form p:not(.form_button) textarea, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) input, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) textarea{font-family: 'Noto Sans regullar' !important;}
-
+.call_to {
+    padding: 15px;
+    padding-top: 15px;
+    border: 1px #FFF solid;
+    display: ;
+    text-align: center;
+}
 #footer {
     background-color: #000000;
     max-width: 1040px;
@@ -104,6 +110,8 @@ section#footer .widget-title {
 .info_wrap p {
     color: #0d1013;
 }
+.form_style{padding-right:50px}
+.vc_custom_1494331485903{padding-left:50px}
 .form_style input#firstname {
     background: #fff url(img/first_name.png);
     background-repeat: no-repeat;
@@ -111,7 +119,7 @@ section#footer .widget-title {
     border: none;  
     padding-left: 40px;
     text-transform: capitalize;
-    border-radius: 0;
+    border-radius: 0;    width: 48%!important;
 }
 .form_style input {  
     background-repeat: no-repeat;  background-position: left center; border: none;   padding-left: 40px;
@@ -121,7 +129,7 @@ section#footer .widget-title {
 
 
 .form_style input#last-name{
-    background: #fff url(img/last_name.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+       width: 48%!important; background: #fff url(img/last_name.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
 }
 .form_style input.wpcf7-email{
     background: #fff url(img/email_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
@@ -161,15 +169,12 @@ section#footer .widget-title {
     font-size: 20px;
     font-weight: normal;
     float: right;}
-
 .form_style input#submit {
     background: #146db3;
     color: #fff;
     border-radius: 0px;
-    align-items: center;
-    margin: 0px auto;
     display: block;
-    margin-top: 25px;    width: 100%; min-height:37px;
+    margin-top: 25px;    min-height:37px;
 }
 .vc_empty_space.aaaa {
     float: left;
@@ -324,6 +329,13 @@ h5 , h4 {    font-weight: normal !important;}
 #main-wrap{ width:100%;}
 .vc-row-wrapper.full_width_content > .row{ margin-left:0px !important; margin-right:0px !important;}
 
+span.wpcf7-form-control-wrap.text-884 input {
+    width: 100% !important;
+}
+span.wpcf7-form-control-wrap.text-883 input {
+    width: 100% !important;
+}
+
 
 @media only screen and (max-width: 1100px)
 {
@@ -335,6 +347,55 @@ h5 , h4 {    font-weight: normal !important;}
 #header-container .dfd-additional-header-menu{ display:block;}
 .dfd-header-buttons-wrap{position:static;}
 .language_con aside {padding-right: 10px;}
+.form_style{padding-right:50px}
+.vc_custom_1494331485903{padding-left:50px}
+.form_style input#firstname {
+    background: #fff url(img/first_name.png);
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    border: none;  
+    padding-left: 40px;
+    text-transform: capitalize;
+    border-radius: 0;    width: 48%!important;
+}
+.form_style input {  
+    background-repeat: no-repeat;  background-position: left center; border: none;   padding-left: 40px;
+    text-transform: capitalize; background-color:transparent; 
+}
+.form_style form p span {    margin-bottom: 10px; border-bottom: 2px solid #96e0ff;}
+
+
+.form_style input#last-name{
+       width: 48%!important; background: #fff url(img/last_name.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+}
+.form_style input.wpcf7-email{
+    background: #fff url(img/email_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+}
+.form_style input#phonenumber{
+    background: #fff url(img/call_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+}
+.form_style input#company{
+    background: #fff url(img/comany_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+}
+.form_style textarea.wpcf7-textarea{
+    background: #fff url(img/msg_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px; height:43px;    padding-top: 14px;
+    padding-bottom: 15px;    border-radius: 0;
+}
+.form_style input#firstname::placeholder{ text-transform:capitalize;}
+.form_style input#last-name::placeholder{ text-transform:capitalize;}
+.form_style input#phonenumber::placeholder{ text-transform:capitalize;}
+.form_style input#company::placeholder{ text-transform:capitalize;}
+.form_style input.wpcf7-email::placeholder{ text-transform:capitalize;}
+.form_style textarea.wpcf7-textarea::placeholder{ text-transform:capitalize;}
+.form_style .wpcf7-form br{    display: none;}
+.form_style input#submit {
+    background: #146db3;
+    color: #fff;
+    border-radius: 0px;
+    display: block;
+    margin-top: 25px;    min-height:37px;
+}
+	
 
 }
 @media only screen and (max-width: 1050px)
@@ -372,6 +433,14 @@ h5 , h4 {    font-weight: normal !important;}
 .kybot-space {    height: 10px !important;}
 /*.info_wrap p{ height:auto;}*/
 }
+#sub-footer .subfooter-copyright a.wechat:hover + img {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    right: 75px;
+    top: 0;
+}
+
 @media only screen and (max-width: 799px)
 
 {
@@ -385,6 +454,7 @@ h5 , h4 {    font-weight: normal !important;}
     width: 100% !important;
     float: left;
 }
+
 }
 @media only screen and (max-width: 600px)
 {
@@ -396,4 +466,41 @@ h5 , h4 {    font-weight: normal !important;}
 	background:#fff;
 	color:#5AA1E3;
 	border: 1px solid #5AA1E3;
+}
+.wp-wrapit p {
+    margin: 0;
+}
+
+.checkk {
+    border: 2px solid #fff;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+.wp-wrapit {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+}
+}
+
+#sub-footer .subfooter-copyright a.wechat + img {
+    display: none;
+}
+#sub-footer .subfooter-copyright a.wechat:hover + img {
+  display: block;
+  position: absolute;
+  right: 91px;
+  top: -31px;
+}
+.dfd-equal-height-wrapper.mobile-destroy-equal-heights.row .columns {
+  overflow: hidden !important;
+  height: 183px !important;
+} 
+.wechatbig {
+ display: none;
+}
+#sub-footer .subfooter-copyright a {
+ font-weight: bold !important;
+}
+img.wechatbig {
+    margin-top: -25px;
 }

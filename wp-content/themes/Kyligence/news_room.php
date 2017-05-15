@@ -13,18 +13,19 @@ get_header();
   .learn_more{text-align:left;    display: block;
     min-height: 50px;}
   a.learn_more_link{padding: 11px 35px; 
-	border: 1px solid #5AA1E3; color:#5AA1E3;border-radius:4px;
-    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/arrow.png');
+	border: 2px solid #2A2A2A;
+	border-color: #2A2A2A;
+    background-image:  url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chvr.png');
     background-repeat: no-repeat;
-    background-position: -13px -1px; 
+    background-position: -1px 3px; 
   }
   a.learn_more_link:hover , :active .learn_more_link{padding: 11px 35px;
-	border: 1px solid #5AA1E3;
-  	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/arrow_hover.png');
+	border: 2px solid  #2A2A2A;
+  	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chevr-hover.png');
     background-repeat: no-repeat;
     background-position:-1px 3px; 
-	background-color:#5AA1E3;
-	color:#fff;
+	color: #fff;
+    background-color: #2A2A2A;
   }
   .chevron{
 	  position: absolute;
@@ -146,7 +147,7 @@ if($terms) {
                                <div class="learn_more" style="width:140px">
 	                                 <a class="learn_more_link" href="<?php echo $term->slug; ?>" title="">
 								           
-								   View All</a>
+								   VIEW ALL</a>
 							    </div>
 						  </div>
 						

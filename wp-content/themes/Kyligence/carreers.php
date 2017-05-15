@@ -214,6 +214,11 @@ $terms = get_terms($taxonomy, $term_args);
 	display: inline-block;
 	left: 17px;
   }
+  #dfd-image-bg-59103a0183cc0
+  {
+	background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg);
+	background-repeat: no-repeat;
+  }
 </style>
 <section id="layout" class="dfd-blog-loop pages" style="padding: 30px 0;">
     <div class="row ">
@@ -279,7 +284,7 @@ style="cursor: pointer;color:black;"><?php echo $term->name; ?></li>
 </div>
 </section>
 </div>
-<div style="padding-left:0!important" class="dfd-content-wrap dfd-page_simple isotope-columns-3">
+<div style="padding-left:0!important" class="dfd-content-wrap dfd-page_simple isotope-columns-3" id="dfd-image-bg-59103a0183cc0">
     <div class="vc_row vc-row-wrapper vc_custom_1493975080723" data-parallax_sense="30"
          style="padding-top: 40px; padding-bottom: 40px;">
         <div class="wpb_row row">
@@ -365,14 +370,6 @@ style="cursor: pointer;color:black;"><?php echo $term->name; ?></li>
                 </div>
             </div>
         </div>
-        <div class="dfd-row-bg-wrapper-cover">
-            <div class="dfd-row-bg-wrap dfd-row-bg-image dfd_simple_image" id="dfd-image-bg-59103a0183cc0"
-                 data-default-image="http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg"
-                 data-mobile_enable="1"></div>
-        </div>
-        <script type="text/javascript">(function ($) {
-            $("head").append("<style>#dfd-image-bg-59103a0183cc0 {background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg);background-repeat: repeat;background-size: cover;background-attachment: scroll;}</style>");
-        })(jQuery);</script>
     </div>
 </div>
 <?php

@@ -13,18 +13,20 @@ get_header();
   .learn_more{text-align:left;    display: block;
     min-height: 50px;}
   a.older{padding: 11px 35px; 
-	border: 1px solid #5AA1E3; color:#5AA1E3;border-radius:4px;
-    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/arrow.png');
+	color:#2A2A2A;
+	border: 2px solid #2A2A2A;
+	border-color: #2A2A2A;	
+    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chvr.png');
     background-repeat: no-repeat;
-    background-position: -13px -1px; 
+    background-position: -1px 3px; 
   }
   a.older:hover , :active .older{padding: 11px 35px;
-	border: 1px solid #5AA1E3;
-  	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/arrow_hover.png');
+	border: 2px solid  #2A2A2A;
+    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chevr-hover.png');
     background-repeat: no-repeat;
     background-position:-1px 3px; 
-	background-color:#5AA1E3;
-	color:#fff;
+	color: #fff;
+    background-color: #2A2A2A;
   }
   .chevron{
 	  position: absolute;
@@ -144,7 +146,7 @@ if($terms) {
 	                        <?php if ($query->max_num_pages > $paged) :?>
 						    <div style="margin: 0 auto 14px;width:400px;padding-left:132px;">
 					  		   <div class="learn_more" style="width:150px">
-	                           <?php echo get_next_posts_link( 'Next Page', $query->max_num_pages );?>
+	                           <?php echo get_next_posts_link( 'NEXT PAGE', $query->max_num_pages );?>
 							  </div>	
 							</div>
 					        <?php endif;?>
