@@ -17,9 +17,10 @@ section#main-content {    padding: 0px;}
 .dfd-header-buttons-wrap {     position: absolute;    right: 0px;    top: -57px;    z-index: 9;}
 #layout{ padding:0px;}
 body .header-wrap .row , 
-.header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; font-family: 'Noto Sans regullar'  !important;}
+.header-top-panel .row{ max-width: 1200px !important; margin: 0px auto; font-family: 'Noto Sans regullar'  !important;}
 .dfd-additional-header-menu{ padding-right:0 !important;}
 .header-top-panel {    background: #f7f7f7 !important;}
+#menu-top-menu{font-weight:regular!important}
 .mega-menu > ul > li:last-child a{ }
 .mega-menu > ul > li:last-child { }
 body .mega-menu > ul > li.current-menu-item:before, body .mega-menu > ul > li.current-menu-ancestor:before{ background: #fff !important;}
@@ -33,7 +34,7 @@ body .mega-menu > ul > li.current-menu-item:before, body .mega-menu > ul > li.cu
 }
 #footer {
     background-color: #000000;
-    max-width: 1040px;
+    max-width: 1240px;
     margin: 0px auto;
 }
 .essai{
@@ -113,69 +114,47 @@ section#footer .widget-title {
 .form_style{padding-right:50px}
 .vc_custom_1494331485903{padding-left:50px}
 .form_style input#firstname {
-    background: #fff url(img/first_name.png);
+    background: transparent url(img/name.png);
     background-repeat: no-repeat;
     background-position: 5px 13px;
-    border: none;  
+    border: 1px solid #808694;  
     padding-left: 40px;
-    text-transform: capitalize;
-    border-radius: 0;    width: 48%!important;
+    border-radius: 5px;    width: 48%!important;
+  margin-right:10px;
 }
 .form_style input {  
-    background-repeat: no-repeat;  background-position: left center; border: none;   padding-left: 40px;
-    text-transform: capitalize; background-color:transparent; 
+    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694;   padding-left: 40px;
+    background-color:transparent;border-radius:5px; 
 }
-.form_style form p span {    margin-bottom: 10px; border-bottom: 2px solid #96e0ff;}
+.form_style form p span {   }
 
 
-.form_style input#last-name{
-       width: 48%!important; background: #fff url(img/last_name.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+.form_style input#phonenumber{
+       width: 50%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;  margin-left:10px; background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
 }
 .form_style input.wpcf7-email{
-    background: #fff url(img/email_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+    background:transparent url(img/email.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
 }
-.form_style input#phonenumber{
-    background: #fff url(img/call_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
-}
+/*.form_style input#phonenumber{
+    background:transparent url(img/call_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 15px;
+}*/
 .form_style input#company{
-    background: #fff url(img/comany_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+    background:transparent url(img/company.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694; border-radius:5px;  padding-left: 40px;    border-radius: 5px;
 }
 .form_style textarea.wpcf7-textarea{
-    background: #fff url(img/msg_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px; height:43px;    padding-top: 14px;
-    padding-bottom: 15px;    border-radius: 0;
+    background: url(img/message.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px; height:43px;    padding-top: 14px;
+    padding-bottom: 15px;    border-radius: 5px;
 }
-.form_style input#firstname::placeholder{ text-transform:capitalize;}
-.form_style input#last-name::placeholder{ text-transform:capitalize;}
-.form_style input#phonenumber::placeholder{ text-transform:capitalize;}
-.form_style input#company::placeholder{ text-transform:capitalize;}
-.form_style input.wpcf7-email::placeholder{ text-transform:capitalize;}
-.form_style textarea.wpcf7-textarea::placeholder{ text-transform:capitalize;}
 .form_style .wpcf7-form br{    display: none;}
-.theme_style a {
-    border: 2px solid #3498db;
-    padding: 5px 0px;
-    width: 160px;
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    font-weight: normal;
-    float: right;
-}
-.pink_style a{  border: 2px solid #e7398e;
-    padding: 5px 0px;
-    width: 160px;
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    font-weight: normal;
-    float: right;}
 .form_style input#submit {
     background: #146db3;
     color: #fff;
-    border-radius: 0px;
+    border-radius: 30px;
     display: block;
-    margin-top: 25px;    min-height:37px;
+    border:none;
+    margin-top: 25px;    min-height:37px;margin:0 auto;
 }
+	
 .vc_empty_space.aaaa {
     float: left;
     width: 100%;
@@ -226,7 +205,7 @@ START-BUTTON banner-btn-download{background-color:#146db3; color:#fff}
 }
 
 .container{    padding-left: 15px;
-    padding-right: 15px; max-width:1070px; margin-left:auto; margin-right:auto;}
+    padding-right: 15px; max-width:1200px; margin-left:auto; margin-right:auto;}
 	.box-content {
     position: relative;
     padding: 0px 53px;
@@ -269,7 +248,7 @@ START-BUTTON banner-btn-download{background-color:#146db3; color:#fff}
 }
 	.wpb_text_column strong{ color:#000;}
 h5 , h4 {    font-weight: normal !important;}
-	p{color:#050505 !important;}
+	/*p{color:#050505 !important;}*/
 	.info_wrap h5 span img {
     margin-right: 7px;
 }
@@ -350,50 +329,45 @@ span.wpcf7-form-control-wrap.text-883 input {
 .form_style{padding-right:50px}
 .vc_custom_1494331485903{padding-left:50px}
 .form_style input#firstname {
-    background: #fff url(img/first_name.png);
+    background:transparent url(img/name.png);
     background-repeat: no-repeat;
     background-position: 5px 13px;
     border: none;  
-    padding-left: 40px;
+    padding-left: 0;
     text-transform: capitalize;
-    border-radius: 0;    width: 48%!important;
+    border-radius: 5px;    width: 48%!important;
 }
 .form_style input {  
-    background-repeat: no-repeat;  background-position: left center; border: none;   padding-left: 40px;
-    text-transform: capitalize; background-color:transparent; 
+    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694;   padding-left: 40px;
+    text-transform: capitalize; background-color:transparent;border-radius:5px; 
 }
-.form_style form p span {    margin-bottom: 10px; border-bottom: 2px solid #96e0ff;}
+.form_style form p span {   }
 
 
-.form_style input#last-name{
-       width: 48%!important; background: #fff url(img/last_name.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+.form_style input#phonenumber{
+       width: 50%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
 }
 .form_style input.wpcf7-email{
-    background: #fff url(img/email_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+    background:transparent url(img/email.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
 }
-.form_style input#phonenumber{
-    background: #fff url(img/call_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
-}
+/*.form_style input#phonenumber{
+    background:transparent url(img/call_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 15px;
+}*/
 .form_style input#company{
-    background: #fff url(img/comany_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px;    border-radius: 0;
+    background:transparent url(img/company.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
 }
 .form_style textarea.wpcf7-textarea{
-    background: #fff url(img/msg_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: none;   padding-left: 40px; height:43px;    padding-top: 14px;
-    padding-bottom: 15px;    border-radius: 0;
+    background: url(img/message.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px; height:43px;    padding-top: 14px;
+    padding-bottom: 15px;    border-radius: 5px;
 }
-.form_style input#firstname::placeholder{ text-transform:capitalize;}
-.form_style input#last-name::placeholder{ text-transform:capitalize;}
-.form_style input#phonenumber::placeholder{ text-transform:capitalize;}
-.form_style input#company::placeholder{ text-transform:capitalize;}
-.form_style input.wpcf7-email::placeholder{ text-transform:capitalize;}
-.form_style textarea.wpcf7-textarea::placeholder{ text-transform:capitalize;}
 .form_style .wpcf7-form br{    display: none;}
 .form_style input#submit {
     background: #146db3;
     color: #fff;
-    border-radius: 0px;
+    border-radius: 30px;
     display: block;
-    margin-top: 25px;    min-height:37px;
+    border:none;
+    margin-top: 25px;    min-height:37px;margin:0 auto;
 }
 	
 
@@ -463,9 +437,7 @@ span.wpcf7-form-control-wrap.text-883 input {
 }
 }
 .btn-slideshow{
-	background:#fff;
 	color:#5AA1E3;
-	border: 1px solid #5AA1E3;
 }
 .wp-wrapit p {
     margin: 0;
@@ -482,15 +454,22 @@ span.wpcf7-form-control-wrap.text-883 input {
 }
 }
 
-#sub-footer .subfooter-copyright a.wechat + img {
+#social-icons .social-ico a.fb, a.li, a.tw{
+  color:#ffffff;
+}
+
+#social-icons .social-ico a.wechat + img {
     display: none;
 }
-#sub-footer .subfooter-copyright a.wechat:hover + img {
+#social-icons .social-ico a.wechat:hover + img {
   display: block;
   position: absolute;
   right: 91px;
   top: -31px;
 }
+
+
+
 .dfd-equal-height-wrapper.mobile-destroy-equal-heights.row .columns {
   overflow: hidden !important;
   height: 183px !important;
@@ -504,3 +483,40 @@ span.wpcf7-form-control-wrap.text-883 input {
 img.wechatbig {
     margin-top: -25px;
 }
+.eight.form_style.columns.vc-column-extra-class-5919a977a0d8e {
+    width: 50% !important;
+    padding: 0;
+    margin: 0;
+}
+.four.columns.vc-column-extra-class-5919a977a4bea {
+    width: 50% !important;
+}
+/* 16 May2017 */
+
+#sub-footer .six.text-left {
+ height: auto !important;
+ line-height: normal;
+}
+#sub-footer .six.text-right {
+ height: auto !important;
+ line-height: normal;
+ overflow: visible !important;
+}
+.dfd-vertical-aligned {
+ transform: none;
+}
+#sub-footer .subfooter-copyright a.wechat:hover + img {
+ display: block;
+ position: absolute;
+ right: 100px;
+ top: -75px;
+ z-index: 9999;
+}
+#sub-footer {
+ overflow: visible;
+}
+
+.no-weight {
+	  font-weight:0 !important;
+	}
+
