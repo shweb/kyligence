@@ -217,7 +217,7 @@ $terms = get_terms($taxonomy, $term_args);
   #dfd-image-bg-59103a0183cc0
   {
 	background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
   }
 </style>
 <section id="layout" class="dfd-blog-loop pages" style="padding: 30px 0;">

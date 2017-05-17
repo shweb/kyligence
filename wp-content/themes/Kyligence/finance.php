@@ -1,92 +1,13 @@
-<?php if (!defined('ABSPATH')) {
-    exit;
-}
-/*
-Template Name: Careers-Finance
-*/
-get_header();
-$taxonomy = 'join-us';
-$term_args = array('orderby' => 'name','order' => 'ASC');
-$terms = get_terms($taxonomy,$term_args);
-?>
-<section id="layout" class="dfd-default-template pages">
-    <div class="row boxed ">
-        <div class="blog-section no-sidebars">
-            <div style="margin: 20px 10px 30px 10px;">
-                <?php if($terms[0]):?>
-                    <ul>
-                        <h3 class="section-header-title" style="text-align: center;"><?php echo $terms[0]->name; ?></h3>
-                    </ul>
-                <?php endif;?>
-            </div>
-            <section id="main-content" role="main" class="twelve columns">
-                <div class="dfd-content-wrap dfd-page_simple isotope-columns-3 container">
-                    <table class="aligncenter" style="border:none !important;background:none;width:100%;">
-                        <thead style="width: 100%;">
-                        <tr style="height:100px;background-color: #00A0D1">
-                            <th style="width: 45%;text-align: center;">TITLE</th><th style="width: 45%;text-align: center;">LOCATION</th><th style="width: 45%;text-align: center;">CREATE AT</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                        $args = array(
-                            'post_type' => 'Careers',
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'join-us',
-                                    'terms' => array($terms[0]->term_id),
-                                    'include_children' => true,
-                                    'operator' => 'IN'
-                                )
-                            )
-                        );
-                        $query = new WP_Query($args);
-                        if ($query->have_posts()) : ?>
-                            <?php while ($query->have_posts()) :$query->the_post();
-                                $url = get_post_meta(get_the_ID(), 'url_news', false);
-                                $url = ($url!= null)?$url[0]:esc_url( apply_filters( 'the_permalink', get_permalink( get_the_ID() ), get_the_ID() ) );
-                                ?>
-                                <tr style="background: none !important;">
-
-                                    <td style="text-align: left;text-align: center;">
-                                        <?php if (has_post_thumbnail()) : ?>
-                                            <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive alignleft')); ?>
-                                        <?php endif; ?>
-                                        <div>
-                                            <p><strong style="text-transform:capitalize;"><a href="<?php echo $url; ?>"><?php the_title(); ?></a></strong></p>
-                                            <p><a href="<?php echo $url; ?>"><?php the_content(); ?></a></p>
-                                        </div>
-                                    </td>
-                                    <td style="text-align: center;"> Shanghai - Chine</td>
-                                    <td style="text-align: center;"><?php the_time('Y/m/d'); ?></td>
-                                </tr>
-                            <?php endwhile; ?>
-
-                        <?php else : ?>
-                            <tr>
-                                <td style="text-align: left; padding-left: 20px;"></td>
-                                <td style="text-align: center;">
-                                    <?php _e('Sorry, no posts matched your criteria.'); ?>
-                                </td>
-                                <td style="text-align: left; padding-left: 20px;"></td>
-                            </tr>
-                        <?php endif; ?>
-                        </tbody>
-                    </table>
-                    <!--<div class="text-center" style="margin: 20px 10px 20px;">
-                            <a href="<?php echo $term->slug; ?>">
-                                <button class="dfd-button-link  dfd-fade">
-                                       <span class="dfd-button-inner-cover">
-                                            <span class="dfd-button-text-main">View All</span>
-                                       </span>
-                                </button>
-                            </a>
-                        </div>-->
-                </div>
-            </section>
-        </div>
-    </div>
-</section>
-<?php
-get_footer();
-?>
+<div class="vc_row vc-row-wrapper dfd-row-full-height dfd-row-content-middle vc_custom_1494904558718" data-parallax_sense="30" style="min-height: 320.02px;"><div class="wpb_row row">
+	<div class="twelve columns vc-column-extra-class-591c4a0394971" data-parallax_sense="30">
+		<div class="wpb_wrapper">
+			<div class="vc-row-wrapper vc_inner vc_row-fluid container"><div class="row wpb_row"><div class="vc-column-hover-591c4a0396788 columns twelve"><div class="wpb_wrapper"><div class="dfd-heading-shortcode"><div class="dfd-heading-module-wrap no-weight text-center style_01 " id="dfd-heading-591c4a0397010"><div class="inline-block"><div class="dfd-heading-module"><h1 class="dfd-title " style="font-size: 55px; color: #ffffff !important; line-height: 50px; ">KYLIGENCE ANALYTICS PLATFORM</h1></div></div></div><script type="text/javascript">(function($) {$("head").append("<style>#dfd-heading-591c4a0397010 .dfd-title {margin-bottom: 30px;}#dfd-heading-591c4a0397010 .dfd-heading-delimiter {margin-top: 10px;margin-bottom: 10px;}@media (max-width: 1023px) and (min-width: 800px){#dfd-heading-591c4a0397010 .dfd-title{font-size: 23px !important;line-height: 23px !important;}}@media (max-width: 799px){#dfd-heading-591c4a0397010 .dfd-title{font-size: 20px !important;line-height: 20px !important;}}@media (max-width: 1023px) and (min-width: 800px){#dfd-heading-591c4a0397010 .dfd-sub-title{font-size: 16px !important;line-height: 16px !important;}}@media (max-width: 799px){#dfd-heading-591c4a0397010 .dfd-sub-title{font-size: 16px !important;line-height: 16px !important;}}</style>");})(jQuery);</script></div><div class="dfd-spacer-module" data-units="px" data-wide_size="20" data-normal_resolution="1024" data-normal_size="" data-tablet_resolution="800" data-tablet_size="0" data-mobile_resolution="480" data-mobile_size="0" style="height: 20px;"></div><div class="dfd-heading-shortcode"><div class="dfd-heading-module-wrap no-weight text-center style_01 " id="dfd-heading-591c4a0397ca4"><div class="inline-block"><div class="dfd-heading-module"><h3 class="dfd-title " style="font-size: 20px; color: #ffffff !important; line-height: 20px; ">Powered by Apache Kylin</h3></div></div></div><script type="text/javascript">(function($) {$("head").append("<style>#dfd-heading-591c4a0397ca4 .dfd-title {margin-bottom: 18px;}#dfd-heading-591c4a0397ca4 .dfd-heading-delimiter {margin-top: 10px;margin-bottom: 10px;}@media (max-width: 1023px) and (min-width: 800px){#dfd-heading-591c4a0397ca4 .dfd-title{font-size: 23px !important;line-height: 23px !important;}}@media (max-width: 799px){#dfd-heading-591c4a0397ca4 .dfd-title{font-size: 20px !important;line-height: 20px !important;}}@media (max-width: 1023px) and (min-width: 800px){#dfd-heading-591c4a0397ca4 .dfd-sub-title{font-size: 16px !important;line-height: 16px !important;}}@media (max-width: 799px){#dfd-heading-591c4a0397ca4 .dfd-sub-title{font-size: 16px !important;line-height: 16px !important;}}</style>");})(jQuery);</script></div><div class="dfd-heading-shortcode"><div class="dfd-heading-module-wrap no-weight text-center style_01 " id="dfd-heading-591c4a03985e3"><div class="inline-block"><div class="dfd-heading-module"><h3 class="dfd-title " style="font-size: 20px; color: #ffffff !important; line-height: 20px; ">A leading Big Data Intelligence Platform</h3></div></div></div><script type="text/javascript">(function($) {$("head").append("<style>#dfd-heading-591c4a03985e3 .dfd-title {margin-bottom: 18px;}#dfd-heading-591c4a03985e3 .dfd-heading-delimiter {margin-top: 10px;margin-bottom: 10px;}@media (max-width: 1023px) and (min-width: 800px){#dfd-heading-591c4a03985e3 .dfd-title{font-size: 23px !important;line-height: 23px !important;}}@media (max-width: 799px){#dfd-heading-591c4a03985e3 .dfd-title{font-size: 20px !important;line-height: 20px !important;}}@media (max-width: 1023px) and (min-width: 800px){#dfd-heading-591c4a03985e3 .dfd-sub-title{font-size: 16px !important;line-height: 16px !important;}}@media (max-width: 799px){#dfd-heading-591c4a03985e3 .dfd-sub-title{font-size: 16px !important;line-height: 16px !important;}}</style>");})(jQuery);</script></div><script type="text/javascript">(function($) {$("head").append("<style>.vc-column-hover-591c4a0396788 {-webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;box-shadow: none;}.vc-column-hover-591c4a0396788:hover {-webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;box-shadow: none; z-index: 1;}</style>");})(jQuery);</script></div></div></div></div><div class="dfd-spacer-module" data-units="px" data-wide_size="20" data-normal_resolution="1024" data-normal_size="" data-tablet_resolution="800" data-tablet_size="0" data-mobile_resolution="480" data-mobile_size="0" style="height: 20px;"></div><div class="dfd-spacer-module" data-units="px" data-wide_size="20" data-normal_resolution="1024" data-normal_size="" data-tablet_resolution="800" data-tablet_size="0" data-mobile_resolution="480" data-mobile_size="0" style="height: 20px;"></div><div class="vc-row-wrapper vc_inner vc_row-fluid vc-row-responsive-591c4a039917b"><div class="row wpb_row"><div class="vc-column-hover-591c4a03996de columns twelve"><div class="wpb_wrapper"></div></div></div><script type="text/javascript">(function($) {$("head").append("<style>@media (max-width: 1280px) and (min-width: 1024px){.vc-row-wrapper.vc-row-responsive-591c4a039917b{margin-top: 20px !important;margin-bottom: 60px !important;}}@media (max-width: 1023px) and (min-width: 800px){.vc-row-wrapper.vc-row-responsive-591c4a039917b{margin-top: 20px !important;margin-bottom: 15px !important;}}@media (max-width: 799px){.vc-row-wrapper.vc-row-responsive-591c4a039917b{margin-top: 0px !important;margin-bottom: 0px !important;}}</style>")})(jQuery);</script></div><div class="vc-row-wrapper vc_inner vc_row-fluid container"><div class="row wpb_row"><div class="vc-column-hover-591c4a0399ea3 columns four"><div class="wpb_wrapper"><div class="vc_btn3-container  btn-slideshow vc_btn3-left vc_custom_1494945439527">
+	<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-white" href="http://kyligence.trustylabs.mg" title="">LEARN MORE</a></div>
+</div></div><div class="vc-column-hover-591c4a039ed32 columns four"><div class="wpb_wrapper"><div class="vc_btn3-container  btn-slideshow vc_btn3-left vc_custom_1494938284588">
+	<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-white" href="http://kyligence.trustylabs.mg/" title="">DOWNLOAD</a></div>
+</div></div><div class="vc-column-hover-591c4a039f79e columns four"><div class="wpb_wrapper"><div class="vc_btn3-container  btn-slideshow vc_btn3-left vc_custom_1494938295655">
+	<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-white" href="http://kyligence.trustylabs.mg" title="">WATCH DEMO</a></div>
+</div></div></div></div>
+		</div> 
+	</div> 
+</div><div class="dfd-row-bg-wrapper-cover"><div class="dfd-row-bg-wrap dfd-row-bg-image dfd_simple_image" id="dfd-image-bg-591c4a03a028b" data-default-image="http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/1.pic_hd.png" data-mobile_enable="1"></div></div><script type="text/javascript">(function($) {$("head").append("<style>#dfd-image-bg-591c4a03a028b {background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/1.pic_hd.png);background-repeat: repeat;background-size: cover;background-attachment: scroll;}@media only screen and (max-width: 799px) {#dfd-image-bg-591c4a03a028b {background-size: cover;}}</style>");})(jQuery);</script></div>
