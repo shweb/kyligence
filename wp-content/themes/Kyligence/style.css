@@ -16,18 +16,25 @@ section#main-content {    padding: 0px;}
 .dfd-header-top-info {display: none;}
 .dfd-header-buttons-wrap {     position: absolute;    right: 0px;    top: -57px;    z-index: 9;}
 #layout{ padding:0px;}
+#sub-footer .subfooter-copyright {
+    color: #fff !important;
+    font-size: 10px !important;
+}
 body .header-wrap .row , 
 .header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; font-family: 'Noto Sans regullar'  !important;}
 .dfd-additional-header-menu{ padding-right:0 !important;}
+.add_padding{padding-right:100px!important}
 .header-top-panel {    background: #f7f7f7 !important;}
 #menu-top-menu{font-weight:regular!important}
+#no_transition{transition:none!important}
 .mega-menu > ul > li:last-child a{ }
 .mega-menu > ul > li:last-child { }
 body .mega-menu > ul > li.current-menu-item:before, body .mega-menu > ul > li.current-menu-ancestor:before{ background: #fff !important;}
 .wpcf7 form.dfd_contact_form p:not(.form_button) input, .wpcf7 form.dfd_contact_form p:not(.form_button) textarea, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) input, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) textarea{font-family: 'Noto Sans regullar' !important;}
 .wpb_text_column a:not(.quote-content):not(.dfd-post-link-url):not(.fn):not(.dfd-post-link-title):not(.dk_toggle){color:#fff!important}
 a.wechat:hover .wechatbig,a.wechat:active .wechatbig,a.wechat:focus .wechatbig{display:block; opacity:1; height:150px;width:150px}
-.wegrey{position:relative;top:3px}
+.wegrey{position:relative;top:3px;width: 27px;
+    height: 27px;}
 a .wechatbig ,a.wechat:visited .wechatbig{
 opacity: 0;
     position: absolute;
@@ -36,6 +43,7 @@ opacity: 0;
     height: 150px;
     left: 0px;
 }
+#move_centered{position:relative; right:25px}
 .row a.wechat{text-align:left;position:relative}
 .row a.wechat:hover .wechatbig,.row a.wechat:active .wechatbig{display:block!important;opacity:1;transition: all 0.5s ease;
   height:150px;width:150px;opacity:1;min-width: 150px;
@@ -150,14 +158,17 @@ section#footer .widget-title {
     border-radius: 5px;    width: 48%!important;
   margin-right:20px;
 }
-.form_style input {  
-    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;border-bottom: solid 1px #808694!important;    padding-left: 40px;
-    background-color:transparent;border-radius:5px; 
+.form_style input，.form_style input:focus {color:#7b7b7b!important;  
+    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;
+  border-bottom: solid 1px #808694!important; 
+  padding-left: 40px;
 }
-.form_style textarea {  
-    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;border-bottom: solid 1px #808694!important;border-bottom: solid 1px #808694!important;   padding-left: 40px;
-    background-color:transparent;border-radius:5px; 
+.form_style textarea, .form_style textarea:focus {color:#7b7b7b!important;  
+    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;
+  border-bottom: solid 1px #808694!important;  padding-left: 40px;
+
 }
+.form_style input:focus,.form_style textarea:focus{background-color:#fff!important;color:#000!important}
 .form_style form p span {   }
 
 
@@ -360,53 +371,6 @@ span.wpcf7-form-control-wrap.text-883 input {
 #header-container .dfd-additional-header-menu{ display:block;}
 .dfd-header-buttons-wrap{position:static;}
 .language_con aside {padding-right: 10px;}
-.form_style{}
-.vc_custom_1494331485903{}
-.form_style input#firstname {
-    background: transparent url(img/name.png);
-    background-repeat: no-repeat;
-    background-position: 5px 13px;
-    border: 1px solid #808694;  
-    padding-left: 40px;
-    border-radius: 5px;   
-  margin-left:20px;  width:48% !important;
-}
-.form_style input {  
-    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;border-bottom: solid 1px #808694!important;    padding-left: 40px;
-    background-color:transparent;border-radius:5px;margin-left:20px; 
-}
-.form_style textarea {  
-    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;border-bottom: solid 1px #808694!important;   padding-left: 40px;
-    background-color:transparent;border-radius:5px; 
-}
-.form_style form p span {   }
-
-
-.form_style input#phonenumber{
-    width:47%  !important; background:transparent url(img/phone.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
-}
-.form_style input.wpcf7-email{
-    background:transparent url(img/email.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
-}
-/*.form_style input#phonenumber{
-    background:transparent url(img/call_icn.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 15px;
-}*/
-.form_style input#company{
-    background:transparent url(img/company.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
-}
-.form_style textarea.wpcf7-textarea{
-    background: url(img/message.png); background-repeat: no-repeat;  background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px; height:43px;    padding-top: 14px;
-    padding-bottom: 15px;  margin-left:20px;  border-radius: 5px;
-}
-.form_style .wpcf7-form br{    display: none;}
-.form_style input#submit {
-    background: #146db3;
-    color: #fff;
-    border-radius: 30px;
-    display: block;
-    border:none;
-    margin-top: 25px;    min-height:37px;margin:0 auto;
-}
 	
 
 }

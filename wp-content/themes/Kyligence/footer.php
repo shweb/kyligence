@@ -28,15 +28,15 @@ $subfooter_class .= ' subfooter-style-'.$subfooter_style;
 						<section id="footer" class="<?php echo esc_attr($footer_class); ?>">
 						  <div class="row container">
 							<?php// get_template_part('templates/footer/style', $footer_style); ?>							
-						  <div class="col-md-3"><?php dynamic_sidebar('footer column 1');?></div>	
-						  <div class="col-md-3"><?php dynamic_sidebar('footer column 2');?></div>	
-						  <div class="col-md-3"><?php dynamic_sidebar('footer column 3');?></div>	
+						  <div class="col-md-4"><?php dynamic_sidebar('footer column 1');?></div>	
+						  <div class="col-md-4"><?php dynamic_sidebar('footer column 2');?></div>	
+						  <div class="col-md-4"><?php dynamic_sidebar('footer column 3');?></div>	
 						  <div class="col-md-3"><?php dynamic_sidebar('footer column 4');?></div>	
 						  <div class="col-md-3"><?php dynamic_sidebar('footer column 5');?></div>
 							<!--<div class="col-md-3"><?php //dynamic_sidebar('footer column 6');?></div>-->
-						  <!--<div class="col-md-4"><?php dynamic_sidebar('footer column 7');?></div>-->
+							<!--<div class="col-md-4"><?php //dynamic_sidebar('footer column 7');?></div>-->
 						  </div>
-							<div class="row">							
+							<div class="row ">							
 								<?php dynamic_sidebar('footer column 8');?>
 							</div>
 						  
@@ -44,7 +44,7 @@ $subfooter_class .= ' subfooter-style-'.$subfooter_style;
 					<?php endif; ?>
 
 					<?php if($subfooter_style != 'off') : ?>
-						<section id="sub-footer" class="container <?php echo esc_attr($subfooter_class); ?>">
+						<section id="sub-footer" class="container add_padding <?php echo esc_attr($subfooter_class); ?>">
 							<?php get_template_part('templates/subfooter/content'); ?>
 						</section>
 					<?php endif; ?>
