@@ -158,16 +158,18 @@ section#footer .widget-title {
     border-radius: 5px;    width: 48%!important;
   margin-right:20px;
 }
-.form_style input，.form_style input:focus {color:#7b7b7b!important;  
-    background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;
-  border-bottom: solid 1px #808694!important; 
-  padding-left: 40px;
-}
+
 .form_style textarea, .form_style textarea:focus {color:#7b7b7b!important;  
     background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;
   border-bottom: solid 1px #808694!important;  padding-left: 40px;
 
 }
+.form_style input，.form_style input:focus {
+  color:#7b7b7b!important; border: solid 1px #808694!important;
+  border-bottom: solid 1px #808694!important; 
+  padding-left: 40px;
+}
+
 .form_style input:focus,.form_style textarea:focus{background-color:#fff!important;color:#000!important}
 .form_style form p span {   }
 
