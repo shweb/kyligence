@@ -158,7 +158,7 @@ section#footer .widget-title {
     border-radius: 5px;    width: 48%!important;
   margin-right:20px;
 }
-.wpcf7-form-control{border-bottom:  1px #808694!important solid}
+.wpcf7-form-control input{border-bottom:  1px #808694!important solid}
 .form_style textarea, .form_style textarea:focus {color:#7b7b7b!important;  
     background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;
   border-bottom:  1px #808694!important solid;  padding-left: 40px;
