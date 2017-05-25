@@ -24,7 +24,11 @@ body .header-wrap .row ,
 .header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; font-family: 'Noto Sans regullar'  !important;}
 .dfd-additional-header-menu{ padding-right:0 !important;}
 .header-top-panel {    background: #f7f7f7 !important;}
-#menu-top-menu{font-weight:regular!important}
+	
+ul#menu-top-menu{font-weight:regular!important}
+＃menu-top-menu-3｛font-weight:regular!important｝
+nav.mega-menu｛font-weight:bold!important｝
+
 #no_transition{transition:none!important}
 .no_transition{transition:none!important;position: relative;
     text-align: left;
