@@ -193,7 +193,7 @@ if($terms) {
                                         <div class="inline-block">
                                             <div class="dfd-heading-module"><h2 class="dfd-title "
                                                                                 style="font-size: 45px; color: #ffffff !important; line-height: 45px; ">
-                                                <span style="letter-spacing: 2px;">Discover more</span></h2></div>
+                                                <span style="letter-spacing: 2px;">Discover More</span></h2></div>
                                         </div>
                                     </div>
                                     <script type="text/javascript">(function ($) {
