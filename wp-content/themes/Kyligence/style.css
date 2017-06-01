@@ -10,7 +10,7 @@ Text Domain:		dfd-native
 License:            GPL v2
 License URI:        http://www.gnu.org/licenses/gpl-2.0.html
 */
-*{font-family: 'Noto Sans regullar' !important;}
+*{font-family: 'Noto Sans regular'  !important;letter-spacing: 1px;}
 .row{ width:auto;}
 section#main-content {    padding: 0px;}
 .dfd-header-top-info {display: none;}
@@ -20,15 +20,21 @@ section#main-content {    padding: 0px;}
     color: #fff !important;
     font-size: 10px !important;
 }
+
 body .header-wrap .row , 
-.header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; font-family: 'Noto Sans regullar'  !important;}
+.header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; font-family: 'Noto Sans regular'  !important;}
 .dfd-additional-header-menu{ padding-right:0 !important;}
 .header-top-panel {    background: #f7f7f7 !important;}
-	
+.vc_btn3.vc_btn3-size-md.vc_btn3-icon-left:not(.vc_btn3-o-empty){padding-left: 42px!important;    text-transform: none;}
 ul#menu-top-menu{font-weight:regular!important}
 ＃menu-top-menu-3｛font-weight:regular!important｝
 nav.mega-menu｛font-weight:bold!important｝
-
+.text-884 span{min-width:48%;}
+.tel-228 span{min-width:48%;}
+.wpcf7 form .wpcf7-not-valid-tip {
+    color: #bcbcbc;
+    width: 48%;
+}
 #no_transition{transition:none!important}
 .no_transition{transition:none!important;position: relative;
     text-align: left;
@@ -37,7 +43,7 @@ nav.mega-menu｛font-weight:bold!important｝
 .mega-menu > ul > li:last-child a{ }
 .mega-menu > ul > li:last-child { }
 body .mega-menu > ul > li.current-menu-item:before, body .mega-menu > ul > li.current-menu-ancestor:before{ background: #fff !important;}
-.wpcf7 form.dfd_contact_form p:not(.form_button) input, .wpcf7 form.dfd_contact_form p:not(.form_button) textarea, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) input, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) textarea{font-family: 'Noto Sans regullar' !important;}
+.wpcf7 form.dfd_contact_form p:not(.form_button) input, .wpcf7 form.dfd_contact_form p:not(.form_button) textarea, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) input, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) textarea{font-family: 'Noto Sans regular' !important;}
 .wpb_text_column a:not(.quote-content):not(.dfd-post-link-url):not(.fn):not(.dfd-post-link-title):not(.dk_toggle){color:#fff!important}
 a.wechat:hover .wechatbig,a.wechat:active .wechatbig,a.wechat:focus .wechatbig{display:block; opacity:1; height:150px;width:150px}
 .wegrey{position:relative;top:3px;width: 27px;
@@ -51,7 +57,7 @@ opacity: 0;
     height: 150px;
     left: 0px;
 }
-#move_centered{position:relative; right:25px;}
+
 .row a.wechat{text-align:left;position:relative}
 .row a.wechat:hover .wechatbig,.row a.wechat:active .wechatbig{display:block!important;opacity:1;transition: all 0.5s ease;
   height:150px;width:150px;opacity:1;min-width: 150px;
@@ -313,7 +319,7 @@ h5 , h4 {    font-weight: normal !important;}
 	.info_wrap h5 span img {
     margin-right: 7px;
 }
-.testimonial-box h3{ font-size:22px !important;}
+.testimonial-box h3{ font-size:20px !important;font-weight:normal!important;letter-spacing: 1px;}
 .dfd-client-logo-wrap .dfd-client-logo-item .thumb-wrap{ padding:0px;}
 .thumb-wrap img {
     width: 115px !important;
@@ -333,8 +339,7 @@ h5 , h4 {    font-weight: normal !important;}
 
 
 @font-face {
-	font-family: 'Noto Sans regullar';
-	src: url('assets/fonts/NotoSans-Regular.ttf') format('truetype');
+	font-family: 'Noto Sans regular'src: url('kyligence.trustylabs.mg/wp-content/themes/Kyligence/assets/fonts/NotoSansHans-Regular.otf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -376,9 +381,23 @@ span.wpcf7-form-control-wrap.text-883 input {
     width: 100% !important;
 }
 
-
+@media only screen and (min-width:1200px){
+.dfd-logo-wrap{width:185px;margin-right: 0 !important;}
+#move_centered{position:relative; right:25px;}
+.lead_title{letter-spacing: 2px;margin-bottom:30px;display: block;}
+	.apache_kylin{letter-spacing: 2px;}
+	  .KAP{font-weight: normal; letter-spacing: 4px!important;}
+}
+@media only screen and (max-width:1200px){
+.dfd-logo-wrap{width:185px;margin-right: 0 !important;}
+#move_centered{position:relative; right:25px;}
+.lead_title{letter-spacing: 2px;margin-bottom:30px;display: block;}
+	.apache_kylin{letter-spacing: 2px;}
+  .KAP{font-weight: normal; letter-spacing: 4px!important;}
+}
 @media only screen and (max-width: 1100px)
 {
+.dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 #header-container .header-wrap > .row > .columns .mega-menu {  /* display: block;*/ }
 .dfd-header-buttons-wrap {    display: block;}
 .lang-sel { }
@@ -392,21 +411,25 @@ span.wpcf7-form-control-wrap.text-883 input {
 }
 @media only screen and (max-width: 1050px)
 {
+  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 	.info_wrap h5{font-size:17px;}
   
-#move_centered{position:relative; left:30%;}
+#move_centered{position:relative; }
 }
 @media only screen and (max-width: 1050px)
 {
 	.info_wrap h5{font-size:13px;}
   
-#move_centered{position:relative; left:30%;}
+.dfd-logo-wrap{width:auto;margin-right: 0 !important;}
+  
+#move_centered{position:relative; }
 }
 @media only screen and (max-width: 800px)
 
 {
+  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 
-#move_centered{position:relative; left:30%;}
+#move_centered{position:relative; }
 	.align_cen h4 {text-align: center !important;}
 	.pink_style a {
     float: none;
@@ -443,10 +466,12 @@ span.wpcf7-form-control-wrap.text-883 input {
 {
 	.language_con aside {
     margin-top:0px;
+	  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 }
 }
 @media only screen and (max-width: 767px)
 {
+  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 .col-md-3 {
     width: 100% !important;
     float: left;
@@ -566,3 +591,8 @@ span.wpcf7-form-control-wrap.text-883 input {
     display:none !important;
 }
 }
+
+.mega-menu > ul > li .submenu-languages > ul li, .mega-menu > ul > li div.sub-nav > ul li, .onclick-menu > ul > li .submenu-languages > ul li, .onclick-menu > ul > li div.sub-nav > ul li{
+	  padding: 6px 30px 6px 25px !important;
+
+	}

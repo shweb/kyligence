@@ -41,9 +41,14 @@ if(class_exists('Dfd_Layout_Builder')) {
                                          id="dfd-heading-592533d0aec18" data-animate-type="transition.slideDownBigIn"
                                          style="opacity: 1; transform: translateY(0px);">
                                         <div class="inline-block">
-                                            <div class="dfd-heading-module"><h2 class="dfd-title "
-                                                                                style="font-size: 45px; color: #ffffff !important; line-height: 45px; ">
-                                                <span style="letter-spacing: 2px;">Discover more</span></h2></div>
+                                            <div class="dfd-heading-module"><h2 class="dfd-title" style="font-size: 45px; color: #ffffff !important; line-height: 45px; ">
+                                                <span style="letter-spacing: 2px;">
+												  <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+													Discover More
+													<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
+													发现更多
+												  <?php endif; ?>
+                                                </span></h2></div>
                                         </div>
                                     </div>
                                     <script type="text/javascript">(function ($) {
@@ -63,11 +68,15 @@ if(class_exists('Dfd_Layout_Builder')) {
                             <div class="wpb_wrapper">
                                 <div class="vc_btn3-container  banner_btn vc_btn3-center">
                                     <button onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
-                                            onmouseenter="this.style.borderColor='#5aa1e3'; this.style.backgroundColor='#5aa1e3'; this.style.color='#ffffff';"
+                                             onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#000000';"
                                             style="border-color:#ffffff; color:#ffffff;"
                                             class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom banner_btn button"
                                             onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?>http://kyligence.trustylabs.mg/why-kyligence/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>http://kyligence.trustylabs.mg/zh/why-kyligence/<?php endif; ?>'">
-                                        WHY KYLIGENCE
+											<?php if(ICL_LANGUAGE_CODE=='en'): ?>
+											  Why Kyligence
+											  <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
+											  选择Kyligence
+											<?php endif; ?>                
                                     </button>
                                 </div>
                             </div>
@@ -77,10 +86,15 @@ if(class_exists('Dfd_Layout_Builder')) {
                                 <div class="vc_btn3-container  banner_btn vc_btn3-center">
                                     <button onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
                                             onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?>http://kyligence.trustylabs.mg/products/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>http://kyligence.trustylabs.mg/zh/products/<?php endif; ?>'"
-                                            onmouseenter="this.style.borderColor='#5aa1e3'; this.style.backgroundColor='#5aa1e3'; this.style.color='#ffffff';"
+                                             onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#000000';"
                                             style="border-color:#ffffff; color:#ffffff;"
                                             class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom banner_btn button">
-                                        PRODUCTS
+                                        
+											<?php if(ICL_LANGUAGE_CODE=='en'): ?>
+											  Products
+											  <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
+											  产品
+											<?php endif; ?> 
                                     </button>
                                 </div>
                             </div>
@@ -89,11 +103,16 @@ if(class_exists('Dfd_Layout_Builder')) {
                             <div class="wpb_wrapper">
                                 <div class="vc_btn3-container  banner_btn vc_btn3-center">
                                     <button onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
-                                            onmouseenter="this.style.borderColor='#5aa1e3'; this.style.backgroundColor='#5aa1e3'; this.style.color='#ffffff';"
+                                             onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#000000';"
                                             style="border-color:#ffffff; color:#ffffff;"
                                             class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom banner_btn button"
                                             onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?>http://kyligence.trustylabs.mg/use-cases/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>http://kyligence.trustylabs.mg/zh/use-cases/<?php endif; ?>'">
-                                        USE CASES
+                                        
+											<?php if(ICL_LANGUAGE_CODE=='en'): ?>
+											  Use Cases
+											  <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
+											  案例
+											<?php endif; ?>
                                     </button>
                                 </div>
                             </div>
