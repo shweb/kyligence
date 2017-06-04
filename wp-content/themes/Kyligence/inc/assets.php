@@ -14,11 +14,19 @@ if (!function_exists('dfd_themes_scripts')) {
 		/*
 		 * Css styles
 		 */
-		wp_register_style('dfd_site_style', get_template_directory_uri() . '/assets/css/app.css', false, null);
+	   wp_register_style('dfd_site_style', get_template_directory_uri() . '/assets/css/app.css', false, null);
+	  
+	  if (ICL_LANGUAGE_CODE =="en"){
+	  wp_register_style('dfd_site_style', get_template_directory_uri() . '/assets/css/en_font.css', false, null);
+	  }
+	  elseif (ICL_LANGUAGE_CODE == "zh"){
+	  wp_register_style('dfd_site_style', get_template_directory_uri() . '/assets/css/zh_font.css', false, null);
+	  }
 		
-		wp_register_style('dfd_mobile_responsive', get_template_directory_uri() . '/assets/css/mobile-responsive.css', false, null);
-		
-		wp_enqueue_style('dfd_site_style');
+	  wp_register_style('dfd_mobile_responsive', get_template_directory_uri() . '/assets/css/mobile-responsive.css', false, null);
+	 
+
+	  wp_enqueue_style('dfd_site_style');
 		
 		/**
 		 * Check if WooCommerce is active
@@ -47,7 +55,7 @@ if (!function_exists('dfd_themes_scripts')) {
 			wp_enqueue_style('dfd_default_icons', get_template_directory_uri() . '/assets/fonts/dfd_icon_set.css', false, null);
 		}
 		
-		wp_enqueue_style( 'main-style', get_stylesheet_uri(), false, null );
+	  wp_enqueue_style( 'main-style', get_stylesheet_uri(), false, null );
 		
 		if(function_exists('dfd_custom_page_style')){
 			dfd_custom_page_style();

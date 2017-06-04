@@ -10,7 +10,9 @@ Text Domain:		dfd-native
 License:            GPL v2
 License URI:        http://www.gnu.org/licenses/gpl-2.0.html
 */
-*{font-family: 'Noto Sans regular'  !important;letter-spacing: 1px;}
+
+
+
 .row{ width:auto;}
 section#main-content {    padding: 0px;}
 .dfd-header-top-info {display: none;}
@@ -20,12 +22,30 @@ section#main-content {    padding: 0px;}
     color: #fff !important;
     font-size: 10px !important;
 }
-
+.com_pany{padding-left:10%!important;}
+ .footer_centered{text-align:center;}
 body .header-wrap .row , 
-.header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; font-family: 'Noto Sans regular'  !important;}
+.header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; }
 .dfd-additional-header-menu{ padding-right:0 !important;}
 .header-top-panel {    background: #f7f7f7 !important;}
-.vc_btn3.vc_btn3-size-md.vc_btn3-icon-left:not(.vc_btn3-o-empty){padding-left: 42px!important;    text-transform: none;}
+.fix_height{
+padding-top: 13px;
+    line-height: 13px;
+}
+.vc_btn3.vc_btn3-size-md.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+    
+    text-align: left;
+  text-transform: none;
+}
+.vc_custom_1496303143835{
+    background-position: center center  !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    zoom: 1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;	
+  }
 ul#menu-top-menu{font-weight:regular!important}
 ＃menu-top-menu-3｛font-weight:regular!important｝
 nav.mega-menu｛font-weight:bold!important｝
@@ -164,15 +184,7 @@ section#footer .widget-title {
 }
 .form_style{}
 .vc_custom_1494331485903{}
-.form_style input#firstname {
-    background: transparent url(img/name.png);
-    background-repeat: no-repeat;
-    background-position: 5px 13px;
-    border: 1px solid #808694;  
-    padding-left: 40px;
-    border-radius: 5px;    width: 48%!important;
-  margin-right:20px;border-bottom: 1px solid #808694!important;
-}
+
 .wpcf7-form-control{border-bottom:  1px #808694!important solid}
 .form_style textarea, .form_style textarea:focus, .form_style input，.form_style input:focus {color:#7b7b7b!important;  
     background-repeat: no-repeat;  background-position: left center; border: solid 1px #808694!important;
@@ -192,7 +204,15 @@ section#footer .widget-title {
 
 .form_style input:focus,.form_style textarea:focus{background-color:#fff!important;color:#000!important}
 .form_style form p span {   }
-
+.form_style input#firstname {
+    background: transparent url(img/name.png);
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    border: 1px solid #808694;  
+    padding-left: 40px;
+    border-radius: 5px;    width: 48%!important;
+  margin-right:20px;border-bottom: 1px solid #808694!important;
+}
 
 .form_style input#phonenumber{border-bottom: 1px solid #808694!important;
        width: 47%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;   background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
@@ -271,11 +291,12 @@ START-BUTTON banner-btn-download{background-color:#146db3; color:#fff}
     margin-bottom: 0px;
 }
 
-.container{    padding-left: 0px;
-    padding-right: 10px; max-width:1040px; margin-left:auto; margin-right:auto;}
-	.box-content {
-    position: relative;
-    padding: 0px 53px;
+.container{    padding-left: 25px;
+   padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .box-content:before {
     background: url(img/comma1.png);
@@ -334,14 +355,6 @@ h5 , h4 {    font-weight: normal !important;}
 }
 #stuning-header div.page-title-inner {
     display: none;
-}
-
-
-
-@font-face {
-	font-family: 'Noto Sans regular'src: url('kyligence.trustylabs.mg/wp-content/themes/Kyligence/assets/fonts/NotoSansHans-Regular.otf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
 }
 
 .language_con {
@@ -464,14 +477,77 @@ span.wpcf7-form-control-wrap.text-883 input {
 @media only screen and (max-width: 799px)
 
 {
+  #footer, #sub-footer{padding-left:0px!important}
+
+  .com_pany{padding-left:10px!important;}
+  .form_style input#firstname {
+    background: transparent url(img/name.png);
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    border: 1px solid #808694;  
+    padding-left: 40px;
+    border-radius: 5px;    width: 100%!important;
+  margin-right:20px;border-bottom: 1px solid #808694!important;
+}
+
+.form_style input#phonenumber{border-bottom: 1px solid #808694!important;
+       width: 100%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;   background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
+}
+
+  .sider_menu {display:none!important}
+  .footer_centered{text-align:left;padding-left: 10px!important; }
+    .center_mobile{ 
+  padding-left: 25px;
+}
+  
 	.language_con aside {
     margin-top:0px;
 	  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 }
+.columns.vc-column-responsive-59327d5e07025 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.columns.vc-column-responsive-59328be243ee7 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
 }
 @media only screen and (max-width: 767px)
 {
+  #footer, #sub-footer{padding-left:0px!important}
+
+  .com_pany{padding-left:10px!important;}
+  .form_style input#firstname {
+    background: transparent url(img/name.png);
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    border: 1px solid #808694;  
+    padding-left: 40px;
+    border-radius: 5px;    width: 100%!important;
+  margin-right:20px;border-bottom: 1px solid #808694!important;
+}
+
+.form_style input#phonenumber{border-bottom: 1px solid #808694!important;
+       width: 100%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;   background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
+}
+
+   .sider_menu {display:none!important} 
+  .columns.vc-column-responsive-59328be243ee7 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+  
+   .footer_centered{text-align:left;padding-left: 10px!important; }
+    .center_mobile{ 
+  padding-left: 25px;
+}
+  
   .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
+	.columns.vc-column-responsive-59327d5e07025 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
 .col-md-3 {
     width: 100% !important;
     float: left;
@@ -488,7 +564,38 @@ span.wpcf7-form-control-wrap.text-883 input {
 }
 @media only screen and (max-width: 600px)
 {
+  #footer, #sub-footer{padding-left:0px!important}
 
+  .com_pany{padding-left:10px!important;}
+
+  .form_style input#firstname {
+    background: transparent url(img/name.png);
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    border: 1px solid #808694;  
+    padding-left: 40px;
+    border-radius: 5px;    width: 100%!important;
+  margin-right:20px;border-bottom: 1px solid #808694!important;
+}
+
+.form_style input#phonenumber{border-bottom: 1px solid #808694!important;
+       width: 100%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;   background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
+}
+
+   .sider_menu {display:none!important}
+	.columns.vc-column-responsive-59328be243ee7 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+   .footer_centered{text-align:left;padding-left: 10px!important;}
+    .center_mobile{ 
+  padding-left: 25px;
+}
+  
+.columns.vc-column-responsive-59327d5e07025 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
 .dfd-header-buttons-wrap {
     display: block;
 }
@@ -578,9 +685,41 @@ span.wpcf7-form-control-wrap.text-883 input {
 .vc_btn3.vc_btn3-style-outline, .vc_btn3.vc_btn3-style-outline-custom, .vc_btn3.vc_btn3-style-outline-custom:focus, .vc_btn3.vc_btn3-style-outline-custom:hover, .vc_btn3.vc_btn3-style-outline:focus, .vc_btn3.vc_btn3-style-outline:hover{
 		  border-width:1px !important;
 		  border-radius:4px !important;
+  			text-align:center;
 }
 
 @media screen and (max-width: 640px){
+  #footer, #sub-footer{padding-left:0px!important}
+
+  .com_pany{padding-left:10px!important;}
+  .form_style input#firstname {
+    background: transparent url(img/name.png);
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    border: 1px solid #808694;  
+    padding-left: 40px;
+    border-radius: 5px;    width: 100%!important;
+  margin-right:20px;border-bottom: 1px solid #808694!important;
+}
+
+.form_style input#phonenumber{border-bottom: 1px solid #808694!important;
+       width: 100%!important; background:transparent url(img/phone.png); background-repeat: no-repeat;   background-position: 5px 13px; border: solid 1px #808694;   padding-left: 40px;    border-radius: 5px;
+}
+
+   .sider_menu {display:none!important}
+  .columns.vc-column-responsive-59328be243ee7 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+   .footer_centered{text-align:left;padding-left: 10px!important;}
+    .center_mobile{ 
+  padding-left: 25px;
+}
+  
+  .columns.vc-column-responsive-59327d5e07025 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
 .cost_wrap:hover .cost img.hover{
     display:none !important;
 }

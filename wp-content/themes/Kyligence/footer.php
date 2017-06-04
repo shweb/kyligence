@@ -29,10 +29,10 @@ $subfooter_class .= ' subfooter-style-'.$subfooter_style;
 						  <div class="row container" style="">
 							<?php// get_template_part('templates/footer/style', $footer_style); ?>							
 						  <div class="col-md-3 col-xs-12"><?php dynamic_sidebar('footer column 1');?></div>	
-							<div class="col-md-3  col-xs-12" style="text-align:center"><?php dynamic_sidebar('footer column 2');?></div>	
-						  <div class="col-md-3 col-xs-12" style="text-align:center"><?php dynamic_sidebar('footer column 3');?></div>	
-						  <div class="col-md-3 col-xs-12" style="text-align:center"><?php dynamic_sidebar('footer column 4');?></div>	
-							<div class="col-md-3 col-xs-12"style="padding-left:10%"><?php dynamic_sidebar('footer column 5');?></div>
+							<div class="col-md-3  col-xs-12 footer_centered" ><?php dynamic_sidebar('footer column 2');?></div>	
+						  <div class="col-md-3 col-xs-12 footer_centered"><?php dynamic_sidebar('footer column 3');?></div>	
+						  <div class="col-md-3 col-xs-12 footer_centered" ><?php dynamic_sidebar('footer column 4');?></div>	
+							<div class="col-md-3 col-xs-12 com_pany"style=""><?php dynamic_sidebar('footer column 5');?></div>
 							<!--<div class="col-md-3"><?php //dynamic_sidebar('footer column 6');?></div>-->
 							<!--<div class="col-md-4"><?php //dynamic_sidebar('footer column 7');?></div>-->
 						  </div>

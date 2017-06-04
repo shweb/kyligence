@@ -27,8 +27,15 @@
 		 <!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" /> -->
 	  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css">
 
-		<?php wp_head();
-//echo ICL_LANGUAGE_CODE;
+		<?php 
+	if (ICL_LANGUAGE_CODE =="en"){?>
+	  	  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/en_font.css">
+	  
+	  <?php }
+	  elseif (ICL_LANGUAGE_CODE == "zh"){?>
+	   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/zh_font.css">
+	  <?php }
+	wp_head();
 	  ?>
 	  <script type="text/javascript">
 		(function ($) {
@@ -91,6 +98,7 @@
 	  <script>
 		var change = null;
          jQuery(document).ready(function(){
+		   
 		 if (jQuery(this).width() <769)
 		 {
 		   jQuery('.sider_menu').css('display','none');
@@ -111,7 +119,7 @@
 			
 	  		}});
 		 
-		  jQuery('strong.myclass').bind('inview', function (event, visible) {
+		  jQuery('.myclass').bind('inview', function (event, visible) {
 			var that = jQuery(this);
 			var selector = that.data("side");
 

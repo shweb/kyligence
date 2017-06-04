@@ -1,0 +1,14 @@
+
+@font-face {
+        font-family: 'Noto Sans Regular'; 
+	src: url('http://kyligence.trustylabs.mg/wp-content/themes/Kyligence/assets/fonts/NotoSans-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+*{
+  font-family: 'Noto Sans Regular',sans-serif  !important;
+  letter-spacing: 1px;
+}
+

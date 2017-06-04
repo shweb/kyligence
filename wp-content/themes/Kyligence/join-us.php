@@ -17,7 +17,7 @@
        	<?php if(ICL_LANGUAGE_CODE=='en'): ?>
 		APPLY
 		<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
-		应用
+		申请
 		<?php endif; ?>
       </a>
     </div>

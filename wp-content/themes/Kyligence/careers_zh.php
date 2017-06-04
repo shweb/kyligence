@@ -228,14 +228,14 @@ $terms = get_terms($taxonomy, $term_args);
                 ">
                 <!-- Start: Job Listing Head -->
                 <div class="job-list-head clearfix visible">
-                    <div class="title">職稱</div>
+                    <div class="title">职位</div>
                     <div class="location">類別</div>
-                    <div class="create">發布日期</div>
+                    <div class="create">发布日期</div>
                 </div>
                 <!-- End: Job Listing Head -->
                 <ul class="job_listings job-listings" id="ajax_join">
                 </ul>
-                <a class="load_more_jobs load-more_join"><strong>加載更多的房源</strong></a>
+                <a class="load_more_jobs load-more_join"><strong>发现更多</strong></a>
         </div>
         <div id="LoadingImage" style="display: none; text-align: center">
             <li style="text-align: center">

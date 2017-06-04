@@ -235,7 +235,7 @@ $terms = get_terms($taxonomy, $term_args);
                          <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                             job title
                          <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
-                           職稱
+                           职位
                          <?php endif; ?>
                     </div>
                     <div class="location">
@@ -249,7 +249,7 @@ $terms = get_terms($taxonomy, $term_args);
                          <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                             Post date
                          <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
-                           發布日期
+                          发布日期
                          <?php endif; ?>
                     </div>
                 </div>
@@ -262,7 +262,7 @@ $terms = get_terms($taxonomy, $term_args);
 					<?php if(ICL_LANGUAGE_CODE=='en'): ?>
 					   Load More...
 					<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
-					   裝載更多...
+					   发现更多...
 					<?php endif; ?>
                   </strong>
                 </a>
