@@ -2,16 +2,7 @@
 <!DOCTYPE html>
 <html class="no-ie" <?php language_attributes(); ?>> <!--<![endif]-->
 	<head>
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Kyligence Home - Kyligence Inc." />
-		<meta property="og:url" content="http://kyligence.io/en/" />
-		<meta property="og:site_name" content="Kyligence Inc." />
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="Kyligence Home - Kyligence Inc." />
-		<meta name="keywords" content="Kyligence,Kylin,Apache,跬智,上海跬智信息技术有限公司">
-        <meta name="description" content="Kyligence Analytics Platform is a leading enterprise ready business analytics platform, that enables fast insight into massive scale data, built on Apache Kylin and the latest open source technologies.">
-	  
+		
 		<meta name="robots" content="noindex">       <meta name="googlebot" content="noindex">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">		
 
@@ -128,10 +119,12 @@
 			 if (change != null){
 			  jQuery(change +'> a').css('color','#000000');
 		      jQuery(change +'> a > span > span.icon-wrap > i').css('color','#000000');
+			  jQuery(change +'> i:nth-child(1)').css('color','#000000'); 
 		     }	
 			
 			jQuery(selector +'> a').css('color','#3498db');
 			jQuery(selector +'> a > span > span.icon-wrap > i').css('color','#3498db');
+			jQuery(selector +'> i:nth-child(1)').css('color','#3498db');
 			change = selector;
              
 		  }

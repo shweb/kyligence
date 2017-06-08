@@ -149,8 +149,12 @@ if($terms) {
 						  <div style="margin: 0 auto 14px;width:400px;padding-left:132px;">
                                <div class="learn_more" style="width:160px">
 	                                 <a class="learn_more_link" href="<?php echo $term->slug; ?>" title="">
-								           
-								   VIEW ALL</a>
+								     <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+										View All
+									 <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
+									    查看全部
+									 <?php endif; ?>      
+								     </a>
 							    </div>
 						  </div>
 						

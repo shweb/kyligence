@@ -422,14 +422,14 @@ span.wpcf7-form-control-wrap.text-883 input {
 	
 
 }
-@media only screen and (max-width: 1050px)
+@media only screen and (max-width: 1250px)
 {
   .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 	.info_wrap h5{font-size:17px;}
   
 #move_centered{position:relative; }
 }
-@media only screen and (max-width: 1050px)
+@media only screen and (max-width: 1024px)
 {
 	.info_wrap h5{font-size:13px;}
   
@@ -720,6 +720,8 @@ span.wpcf7-form-control-wrap.text-883 input {
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
+}
+@media screen and (max-width: 720px){
 .cost_wrap:hover .cost img.hover{
     display:none !important;
 }
@@ -730,7 +732,6 @@ span.wpcf7-form-control-wrap.text-883 input {
     display:none !important;
 }
 }
-
 .mega-menu > ul > li .submenu-languages > ul li, .mega-menu > ul > li div.sub-nav > ul li, .onclick-menu > ul > li .submenu-languages > ul li, .onclick-menu > ul > li div.sub-nav > ul li{
 	  padding: 6px 30px 6px 25px !important;
 

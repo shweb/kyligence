@@ -26,7 +26,7 @@ $terms = get_terms($taxonomy, $term_args);
         background: #76aede;
         font-size: 16px;
         font-weight: 500;
-        text-transform: uppercase;
+        text-transform: capitalize;
         text-align: left;
         font-weight: bold;
 	    border-radius:5px
@@ -35,7 +35,7 @@ $terms = get_terms($taxonomy, $term_args);
         padding: 0 0 0 20px;
         margin: 0 0 0 0;
         width: 45%;
-        text-transform: uppercase;
+        text-transform: capitalize;
         float: left;
         color: #3e3e3e!important;
         font-weight: bold;
@@ -53,7 +53,7 @@ $terms = get_terms($taxonomy, $term_args);
         padding: 0 0 0 0;
         margin: 0 0 0 0;
         width: 20%;
-        text-transform: uppercase;
+        text-transform: capitalize;
         float: left;
         color: #3e3e3e !important;
         font-weight: bold;
@@ -63,7 +63,7 @@ $terms = get_terms($taxonomy, $term_args);
         padding: 0 0 0 5px;
         margin: 0 0 0 0;
         width: 20%;
-        text-transform: uppercase;
+        text-transform: capitalize;
         float: left;
         color: #3e3e3e !important;
         font-weight: bold;
@@ -73,7 +73,7 @@ $terms = get_terms($taxonomy, $term_args);
         padding: 0 0 0 0;
         margin: 0 0 0 0;
         width: 15%;
-        text-transform: uppercase;
+        text-transform: capitalize;
         float: left;
         color: black !important;
         font-weight: bold;
@@ -127,8 +127,11 @@ $terms = get_terms($taxonomy, $term_args);
         color: #5c5f69;
         font-weight: 700;
         text-decoration: none;
-        text-transform: uppercase;
+        text-transform: capitalize;
         display: inline-block;
+    }
+    .widget-title,.cat-item,.location{
+	 text-transform: capitalize !important;
     }
     .job-listings li .location {
         padding: 14px 0 0 0;
@@ -213,10 +216,12 @@ $terms = get_terms($taxonomy, $term_args);
 	display: inline-block;
 	left: 17px;
   }
-  #dfd-image-bg-59103a0183cc0
+  #dfd-image-bg-592533d0b22a2 
   {
-	background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/04/bg.jpg);
-	background-repeat: repeat;
+	background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/底图.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
   }
     .banner_btn button {
     width: 200px;
@@ -242,7 +247,7 @@ $terms = get_terms($taxonomy, $term_args);
                          <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                             categorie
                          <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
-                           類別
+                           类别
                          <?php endif; ?>
                     </div>
                     <div class="create">                      
@@ -304,7 +309,7 @@ $terms = get_terms($taxonomy, $term_args);
 				  <?php if(ICL_LANGUAGE_CODE=='en'): ?>
 				     Categories
 				  <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
-				     分類
+				     分类
 				  <?php endif; ?>
                 </h3>
             </div>
@@ -314,7 +319,7 @@ $terms = get_terms($taxonomy, $term_args);
                         <ul>
                             <li class="cat-item cat-item-1 cat" data-cat="null" style="cursor: pointer;color:black;">                              
 	                         <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                          	   ALL
+                          	   All
                              <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
                                所有
                              <?php endif; ?>
@@ -447,9 +452,6 @@ $terms = get_terms($taxonomy, $term_args);
              data-default-image="http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/底图.png"
              data-mobile_enable="1"></div>
     </div>
-    <script type="text/javascript">(function ($) {
-        $("head").append("<style>#dfd-image-bg-592533d0b22a2 {background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/底图.png);background-repeat: repeat;background-size: cover;background-attachment: scroll;}</style>");
-    })(jQuery);</script>
 </div>
 <?php
 get_footer();

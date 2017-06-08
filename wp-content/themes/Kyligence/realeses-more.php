@@ -148,7 +148,11 @@ if($terms) {
 	                        <?php if ($query->max_num_pages > $paged) :?>
 						    <div style="margin: 0 auto 14px;width:400px;padding-left:132px;">
 					  		   <div class="learn_more" style="width:160px">
-	                           <?php echo get_next_posts_link( 'NEXT PAGE', $query->max_num_pages );?>
+	                           <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+									<?php echo get_next_posts_link( 'NEXT PAGE', $query->max_num_pages );?>
+									<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
+									<?php echo get_next_posts_link( '下一頁', $query->max_num_pages );?>
+								 <?php endif; ?>
 							  </div>	
 							</div>
 					        <?php endif;?>

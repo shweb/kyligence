@@ -15,7 +15,7 @@
     <div class="apply">
       <a href="mailto:joinus@kyligence.io" style="border-radius: 25px;padding:7px 20px; background-color: #76aede;color:black;">
        	<?php if(ICL_LANGUAGE_CODE=='en'): ?>
-		APPLY
+		Apply
 		<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
 		申请
 		<?php endif; ?>
