@@ -22,6 +22,7 @@ section#main-content {    padding: 0px;}
     color: #fff !important;
     font-size: 10px !important;
 }
+.no_padding{padding-top:0!important}
 .com_pany{padding-left:10%!important;}
  .footer_centered{text-align:center;}
 body .header-wrap .row , 
@@ -393,21 +394,22 @@ span.wpcf7-form-control-wrap.text-884 input {
 span.wpcf7-form-control-wrap.text-883 input {
     width: 100% !important;
 }
+	
 
-@media only screen and (min-width:1200px){
-.dfd-logo-wrap{width:185px;margin-right: 0 !important;}
-#move_centered{position:relative; right:25px;}
-.lead_title{letter-spacing: 2px;margin-bottom:30px;display: block;}
-	.apache_kylin{letter-spacing: 2px;}
-	  .KAP{font-weight: normal; letter-spacing: 4px!important;}
+
+@media only screen and (max-width: 1250px)
+{
+  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
+	.info_wrap h5{font-size:17px;}
+  
+#move_centered{position:relative; }
 }
-@media only screen and (max-width:1200px){
-.dfd-logo-wrap{width:185px;margin-right: 0 !important;}
-#move_centered{position:relative; right:25px;}
-.lead_title{letter-spacing: 2px;margin-bottom:30px;display: block;}
-	.apache_kylin{letter-spacing: 2px;}
-  .KAP{font-weight: normal; letter-spacing: 4px!important;}
-}
+  @media only screen and (min-width: 1101px){
+  
+	.dfd-header-logos{
+		width:210px!important
+		}
+  }
 @media only screen and (max-width: 1100px)
 {
 .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
@@ -422,13 +424,6 @@ span.wpcf7-form-control-wrap.text-883 input {
 	
 
 }
-@media only screen and (max-width: 1250px)
-{
-  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
-	.info_wrap h5{font-size:17px;}
-  
-#move_centered{position:relative; }
-}
 @media only screen and (max-width: 1024px)
 {
 	.info_wrap h5{font-size:13px;}
@@ -437,9 +432,10 @@ span.wpcf7-form-control-wrap.text-883 input {
   
 #move_centered{position:relative; }
 }
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 992px)
 
 {
+  
   .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 
 #move_centered{position:relative; }
@@ -477,6 +473,17 @@ span.wpcf7-form-control-wrap.text-883 input {
 @media only screen and (max-width: 799px)
 
 {
+  /*add css to apply*/
+  .apply{font-size:11px!important}
+  .job_listings div{
+  	font-size: 11px;
+	}
+	section#main-content {   
+	  padding-left: 0px!important;
+	}
+
+  /*add css to apply*/
+  
   #footer, #sub-footer{padding-left:0px!important}
 
   .com_pany{padding-left:10px!important;}
@@ -513,8 +520,18 @@ span.wpcf7-form-control-wrap.text-883 input {
     padding-right: 25px !important;
 }
 }
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
 {
+  /*add css to apply*/
+  .apply{font-size:11px!important}
+  .job_listings{
+  	font-size: 11px;
+	}
+   section#main-content {   
+	  padding-left: 0px!important;
+	}
+
+  /*add css to apply*/
   #footer, #sub-footer{padding-left:0px!important}
 
   .com_pany{padding-left:10px!important;}
@@ -562,8 +579,39 @@ span.wpcf7-form-control-wrap.text-883 input {
 		}
 
 }
+@media screen and (max-width: 720px){
+  /*add css to apply*/
+  .apply{font-size:11px!important}
+.job_listings{
+  	font-size: 11px;
+	}
+section#main-content {   
+	  padding-left: 0px!important;
+	}
+  /*add css to apply*/
+.cost_wrap:hover .cost img.hover{
+    display:none !important;
+}
+.easy_wrap:hover .easy img.hover{
+    display:none !important;
+}
+.height_wrap:hover .heigh-perf img.hover{
+    display:none !important;
+}
+}
+
 @media only screen and (max-width: 600px)
 {
+  /*add css to apply*/
+  .apply{font-size:11px!important}
+	.job_listings{
+  		font-size: 11px;
+	}
+section#main-content {   
+	  padding-left: 0px!important;
+	}
+
+  /*add css to apply*/
   #footer, #sub-footer{padding-left:0px!important}
 
   .com_pany{padding-left:10px!important;}
@@ -689,6 +737,19 @@ span.wpcf7-form-control-wrap.text-883 input {
 }
 
 @media screen and (max-width: 640px){
+  /*add css to apply*/
+  .header-top-panel{visibility: hidden;
+    clear: both;
+    display: none!important;}
+  .apply{font-size:11px!important}
+	.job_listings{
+  		font-size: 11px;
+	}
+section#main-content {   
+	  padding-left: 0px!important;
+	}
+
+  /*add css to apply*/
   #footer, #sub-footer{padding-left:0px!important}
 
   .com_pany{padding-left:10px!important;}
@@ -721,18 +782,48 @@ span.wpcf7-form-control-wrap.text-883 input {
     padding-right: 25px !important;
 }
 }
-@media screen and (max-width: 720px){
-.cost_wrap:hover .cost img.hover{
-    display:none !important;
-}
-.easy_wrap:hover .easy img.hover{
-    display:none !important;
-}
-.height_wrap:hover .heigh-perf img.hover{
-    display:none !important;
-}
-}
+
 .mega-menu > ul > li .submenu-languages > ul li, .mega-menu > ul > li div.sub-nav > ul li, .onclick-menu > ul > li .submenu-languages > ul li, .onclick-menu > ul > li div.sub-nav > ul li{
 	  padding: 6px 30px 6px 25px !important;
 
 	}
+/* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+  .header-top-panel{visibility: hidden;
+    clear: both;
+    display: none!important;}
+	  .apply{font-size:11px!important}
+	  .job_listings{font-size: 11px;}
+	  #main-content{
+			padding-left: 0px!important; 
+	  }
+  	section#main-content {   
+	  padding-left: 0px!important;
+	}
+		
+
+    }
+	@media only screen and (max-width: 425px){
+	  .apply{font-size:11px!important}
+	  .job_listings{font-size: 11px;}
+	  #main-content{
+			padding-left: 0px!important; 
+	  }
+  section#main-content {   
+	  padding-left: 0px!important;
+	}
+		
+	  
+	}
+  @media only screen and (max-width: 375px){
+	  .apply{font-size:11px!important}
+	  .job_listings{font-size: 11px;}
+	  #main-content{
+			padding-left: 0px!important; 
+	  }
+		section#main-content {   
+	  padding-left: 0px!important;
+	}
+	  
+	}
+  

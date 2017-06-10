@@ -227,11 +227,153 @@ $terms = get_terms($taxonomy, $term_args);
     width: 200px;
     height: 70px;
 }
+ 
+   @media only screen and (max-width: 799px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	
+  }
+  @media only screen and (max-width: 768px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	 .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+  }
+  @media only screen and (max-width: 720px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	 .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+  }
+  @media only screen and (max-width: 600px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	 .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+  }
+  @media only screen and (max-width: 640px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	 .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+}
+  @media only screen and (max-width: 425px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	.job-list-head .title {
+  		width: 30%;
+		}
+	.job-list-head .create {
+	    width: 25%;
+	}
+    .job-listings li {
+	    padding: 8px 1px;
+	}
+	.job-listings li .title {
+		  width: 30%;
+	}
+    .job-listings li .create {
+	    width: 25%;
+	
+	  }
+	  .job-listings li .apply {
+	    width: 20%;
+	 }
+  .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+  }
+	@media only screen and (max-width: 375px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	.job-list-head .title {
+  		width: 30%;
+		}
+	.job-list-head .create {
+	    width: 25%;
+	}
+    .job-listings li {
+	    padding: 8px 1px;
+	}
+	.job-listings li .title {
+		  width: 30%;
+	}
+    .job-listings li .create {
+	    width: 25%;
+	
+	  }
+	  .job-listings li .apply {
+	    width: 20%;
+	 }
+   .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+  }	
+  @media only screen and (max-width: 320px)
+  {
+	p{
+	  font-size: 11px;
+  	 }
+	.job-list-head .title {
+  		width: 30%;
+		}
+	.job-list-head .create {
+	    width: 25%;
+	}
+    .job-listings li {
+	    padding: 8px 1px;
+	}
+	.job-listings li .title {
+		  width: 30%;
+	}
+    .job-listings li .create {
+	    width: 25%;
+	
+	  }
+	  .job-listings li .apply {
+	    width: 20%;
+	 }
+   .three, .row .three{
+	  width: 100% !important;
+	  padding-left: 0px;
+	  padding-right:13px;
+	}
+  }
 </style>
 <section id="layout" class="dfd-blog-loop pages" style="padding: 30px 0;">
     <div class="row ">
         <div class="blog-section sidebar-left">
-            <section id="main-content" role="main" class="nine columns" style="padding-left:10px!important;">
+            <section id="main-content" role="main" class="nine columns" >
                 <div class="job_listings"
                 ">
                 <!-- Start: Job Listing Head -->

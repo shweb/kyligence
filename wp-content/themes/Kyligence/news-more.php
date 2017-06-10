@@ -71,7 +71,36 @@ get_header();
     .banner_btn button {
     width: 200px;
     height: 70px;
-}  
+}
+  .table_room{
+	border:none !important;
+	background:none;
+	width:52%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table_room_col1{
+	text-align: left;
+	padding-left: 10px !important;
+}
+.table_room_col2{
+  text-align: left;
+  padding-left: 50px;
+	  
+}
+  .title_room{
+	margin: 0 auto 14px;
+	width:400px;
+	padding-left:94px;
+	text-align: left;  
+ }
+ .view_all{
+  margin: 0 auto 14px;
+  width:400px;
+  padding-left:132px;	
+	
+ }  
   
 </style>
 <?php
@@ -94,16 +123,16 @@ if($terms) {
                        
 						<div style="margin: 20px 10px 30px 0px;">
 						  
-						  <div style="margin: 0 auto 14px;width:400px;padding-left:94px;">
-                             <h3 class="section-header-title" style="text-align: left;">
+						  <div class="title_room">
+                             <h3 class="section-header-title">
 							   <?php echo $terms[0]->name; ?>
 						     </h3>
 						  </div>
 						  
 						  <div style="margin:0 auto;">
 							
-                            <table class="aligncenter" style="border:none !important;background:none;width:52%;">
-                                <tbody>
+                            <table class="table_room">
+                              <tbody>
                             <?php
                             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                             $args = array(
@@ -126,8 +155,8 @@ if($terms) {
                                     $url = ($url!= null)?$url[0]:esc_url( apply_filters( 'the_permalink', get_permalink( get_the_ID() ), get_the_ID() ) );
                                     ?>
                                     <tr style="background: none !important;">
-                                        <td style="text-align: left; padding-left: 10px;"><?php the_time('Y/m/d'); ?></td>
-                                        <td style="text-align: left; padding-left: 50px;">
+                                        <td class="table_room_col1"><?php the_time('Y/m/d'); ?></td>
+                                        <td class="table_room_col2">
                                             <a href="<?php echo $url; ?>">
                                                 <?php the_title(); ?>
                                             </a>
@@ -147,8 +176,8 @@ if($terms) {
                                 </tbody>
                             </table>		
 	                        <?php if ($query->max_num_pages > $paged) :?>
-						    <div style="margin: 0 auto 14px;width:400px;padding-left:132px;">
-					  		   <div class="learn_more" style="width:160px">
+						    <div class="view_all">
+					  		   <div class="learn_more">
 								 <?php if(ICL_LANGUAGE_CODE=='en'): ?>
 									<?php echo get_next_posts_link( 'NEXT PAGE', $query->max_num_pages );?>
 									<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>

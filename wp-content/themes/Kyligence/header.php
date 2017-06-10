@@ -25,10 +25,24 @@
 	  <?php }
 	  elseif (ICL_LANGUAGE_CODE == "zh"){?>
 	   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/zh_font.css">
-	  <?php }
+	  <?php } 
 	wp_head();
 	  ?>
+	  <?php if (is_single()||is_page(array('BLOG','博客'))):?>
+	  <style>
+	     @media only screen and (max-width: 375px)
+		{
+		  section#main-content
+		  {   
+	       padding-left: 0px!important;
+	       padding-right: 0px!important;
+	      }
+	  
+	    }
+	  </style>
+	  <?php endif;?>
 	  <script type="text/javascript">
+		
 		(function ($) {
 		  function getViewportHeight() {
 			  var height = window.innerHeight; // Safari, Opera
@@ -89,7 +103,17 @@
 	  <script>
 		var change = null;
          jQuery(document).ready(function(){
+		 
+		 jQuery('#menu-top-menu').toggleClass('menu-clonable-for-mobiles');
+		 jQuery('#menu-top-menu-3').toggleClass('menu-clonable-for-mobiles');
+		   var list=jQuery('#sidr').html();
+		   var list2=jQuery('#sidr .sidr-inner').find('ul').eq(1);
+		  console.log(list); 
+		  console.log(list2); 
+		   //list2.after(list);
+		   jQuery('list2').clone().before('list').end();
 		   
+		     
 		 if (jQuery(this).width() <769)
 		 {
 		   jQuery('.sider_menu').css('display','none');

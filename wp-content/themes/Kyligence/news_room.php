@@ -10,8 +10,12 @@ get_header();
   tr{
 	border-bottom:5px solid white;
   }
-  .learn_more{text-align:left;    display: block;
-    min-height: 50px;}
+  .learn_more{
+	text-align:left;
+	display: block;
+    min-height: 50px;
+	width:160px
+	}
   a.learn_more_link{padding: 11px 35px; 
 	border: 2px solid #2A2A2A;
 	border-color: #2A2A2A;
@@ -71,6 +75,36 @@ get_header();
     width: 200px;
     height: 70px;
 }
+  .table_room{
+	border:none !important;
+	background:none;
+	width:52%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table_room_col1{
+	text-align: left;
+	padding-left: 10px !important;
+}
+.table_room_col2{
+  text-align: left;
+  padding-left: 50px;
+	  
+}
+  .title_room{
+	margin: 0 auto 14px;
+	width:400px;
+	padding-left:94px;
+	text-align: left;  
+ }
+ .view_all{
+  margin: 0 auto 14px;
+  width:400px;
+  padding-left:132px;	
+	
+ }
+	  
   
 </style>
 <?php
@@ -95,14 +129,14 @@ if($terms) {
                        
 						<div style="margin: 20px 10px 0px 0px;">
 						  
-						  <div style="margin: 0 auto 14px;width:400px;padding-left:94px;">
-                             <h3 class="section-header-title" style="text-align: left;">
+						  <div class="title_room">
+                             <h3 class="section-header-title">
 							   <?php echo $term->name; ?>
 						     </h3>
 						  </div>
 						  
 						  <div style="margin:0 auto;">
-                            <table class="aligncenter" style="border:none !important;background:none;width:52%;">
+                            <table class="table_room">
                                 <tbody>
                                 <?php
                                 $args = array(
@@ -124,8 +158,8 @@ if($terms) {
                                         $url = ($url!= null)?$url[0]:esc_url( apply_filters( 'the_permalink', get_permalink( get_the_ID() ), get_the_ID() ) );
                                         ?>
                                         <tr style="background: none !important;">
-                                            <td style="text-align: left;padding-left: 10px;"><?php the_time('Y/m/d'); ?></td>
-                                            <td style="text-align: left;padding-left: 50px;">
+                                            <td class="table_room_col1"><?php the_time('Y/m/d'); ?></td>
+                                            <td class="table_room_col2">
                                                 <a href="<?php echo $url; ?>">
                                                     <?php the_title(); ?>
                                                 </a>
@@ -135,7 +169,7 @@ if($terms) {
 
                                 <?php else : ?>
                                     <tr>
-                                        <td style="text-align: left; padding-left: 20px;"></td>
+                                        <td style=""></td>
                                         <td style="text-align: center;">
                                             <?php _e('Sorry, no posts matched your criteria.'); ?>
                                         </td>
@@ -146,8 +180,8 @@ if($terms) {
 							
 							
 							
-						  <div style="margin: 0 auto 14px;width:400px;padding-left:132px;">
-                               <div class="learn_more" style="width:160px">
+						  <div class="view_all">
+                               <div class="learn_more">
 	                                 <a class="learn_more_link" href="<?php echo $term->slug; ?>" title="">
 								     <?php if(ICL_LANGUAGE_CODE=='en'): ?>
 										View All
