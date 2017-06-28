@@ -1,0 +1,7 @@
+2017-06-28T13:48:05+00:00 - MERGED:
+ - wp-embed - /wp-includes/js/wp-embed.min.js - unminified version used
+ - sitepress - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js
+2017-06-28T13:48:31+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-06-28T13:48:31+00:00 - COMPRESSION COMPLETE - 1.17K saved
+2017-06-28T13:49:21+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-06-28T13:49:21+00:00 - COMPRESSION COMPLETE - 1.17K saved

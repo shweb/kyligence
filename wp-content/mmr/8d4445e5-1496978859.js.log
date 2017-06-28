@@ -1,0 +1,14 @@
+2017-06-28T12:12:28+00:00 - MERGED:
+ - jquery-core - /wp-includes/js/jquery/jquery.js
+ - jquery-migrate - /wp-includes/js/jquery/jquery-migrate.min.js - unminified version used
+ - admin-bar - /wp-includes/js/admin-bar.min.js - unminified version used
+ - layerslider-greensock - http://kyligence.io/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js
+ - layerslider - http://kyligence.io/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js
+ - layerslider-transitions - http://kyligence.io/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js
+ - tp-tools - http://kyligence.io/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js
+ - revmin - http://kyligence.io/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js
+ - stickyAnythingLib - http://kyligence.io/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/jq-sticky-anything.min.js - unminified version used
+ - jquery.cookie - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js
+ - wpml-browser-redirect - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/browser-redirect.js
+2017-06-28T12:12:35+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-06-28T12:12:36+00:00 - COMPRESSION COMPLETE - 26.54K saved

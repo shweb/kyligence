@@ -507,7 +507,9 @@ function salesforce_form($options, $is_sidebar = false, $errors = null, $form_id
 	$submit = stripslashes( salesforce_get_option( 'submitbutton', $form_id, $options ) );
 
 	if (empty($submit))
-		$submit = "Submit";
+	  $submit = "Submit";
+  
+  $submit = "Let's talk"; // added by dong
 
 	$content .= "\t";
 	if ($options['wpcf7css']) {

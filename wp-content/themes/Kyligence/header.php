@@ -105,7 +105,7 @@
          jQuery(document).ready(function(){
 		 
 		 jQuery('#menu-top-menu').toggleClass('menu-clonable-for-mobiles');
-		 jQuery('#menu-top-menu-3').toggleClass('menu-clonable-for-mobiles');
+		 jQuery('#menu-top-menu-2').toggleClass('menu-clonable-for-mobiles');
 		   var list=jQuery('#sidr').html();
 		   var list2=jQuery('#sidr .sidr-inner').find('ul').eq(1);
 		  console.log(list); 

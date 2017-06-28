@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name:         DFD Native
 Theme URI:          http://nativewptheme.net/
 Description:        Native - Powerful startup development tool
@@ -24,7 +24,8 @@ section#main-content {    padding: 0px;}
 }
 .no_padding{padding-top:0!important}
 .com_pany{padding-left:10%!important;}
- .footer_centered{text-align:center;}
+ .footer_centered{text-align:initial;}
+body {font-family:freight-sans-pro,Lato,Sans-Serif;}
 body .header-wrap .row , 
 .header-top-panel .row{ max-width: 1040px !important; margin: 0px auto; }
 .dfd-additional-header-menu{ padding-right:0 !important;}
@@ -34,9 +35,9 @@ padding-top: 13px;
     line-height: 13px;
 }
 .vc_btn3.vc_btn3-size-md.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
-    
-    text-align: left;
-  text-transform: none;
+      text-transform: none;
+	  padding-left: 39px;
+	  text-align: left;
 }
 .vc_custom_1496303143835{
     background-position: center center  !important;
@@ -61,14 +62,16 @@ nav.mega-menu｛font-weight:bold!important｝
     text-align: left;
     top: 0px;
 	transform:none!important;}
+.wpb_wrapper > h4 > span {font-size:36px;}
+.wpb_wrapper > h4 {font-size:36px;}
 .mega-menu > ul > li:last-child a{ }
 .mega-menu > ul > li:last-child { }
 body .mega-menu > ul > li.current-menu-item:before, body .mega-menu > ul > li.current-menu-ancestor:before{ background: #fff !important;}
-.wpcf7 form.dfd_contact_form p:not(.form_button) input, .wpcf7 form.dfd_contact_form p:not(.form_button) textarea, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) input, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) textarea{font-family: 'Noto Sans regular' !important;}
+.wpcf7 form.dfd_contact_form p:not(.form_button) input, .wpcf7 form.dfd_contact_form p:not(.form_button) textarea, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) input, .wpcf7 form:not(.dfd_contact_form) p:not(.form_button) textarea{font-family: 'freight-sans-pro,Lato,Sans-Serif' !important;}
 .wpb_text_column a:not(.quote-content):not(.dfd-post-link-url):not(.fn):not(.dfd-post-link-title):not(.dk_toggle){color:#fff!important}
 a.wechat:hover .wechatbig,a.wechat:active .wechatbig,a.wechat:focus .wechatbig{display:block; opacity:1; height:150px;width:150px}
 .wegrey{position:relative;top:3px;width: 27px;
-    height: 27px;}
+    height: 24px;}
 .add-margin-bottom{margin-top: 9px;}
 a .wechatbig ,a.wechat:visited .wechatbig{
 opacity: 0;
@@ -119,14 +122,14 @@ article.post:hover .essai {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
 	}
 article.post h3.entry-title{
-color:#76aede;
+color:#217fc4;
 }
 
 article.post .moveleft{
   padding-left:7px
 }
 article.post h3.entry-title a,article.post h3.entry-title a:hover{
-color:#76aede
+color:#217fc4
 }
 div#footer-wrap {
     background: #000;
@@ -171,6 +174,15 @@ section#footer .widget-title {
   /*  margin-top: -130px;*/
 
 }
+
+#menu-top-menu-3 li:last-child{
+    color: #fff !important;
+    padding: 0 25px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #227FC4;
+	}
 .img_wrap {
     float: left;
     text-align: right; padding:15px 15px 0px 15px;
@@ -279,7 +291,7 @@ START-BUTTON banner-btn-download{background-color:#146db3; color:#fff}
 #footer.footer-style-2 p{ color:#ddd !important;    margin-bottom: 0px;}
 #footer.footer-style-2 li{ padding-bottom:6px;}
 .col-md-3 {
-  width:20% !important;
+  width:25% !important;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -292,9 +304,7 @@ START-BUTTON banner-btn-download{background-color:#146db3; color:#fff}
     margin-bottom: 0px;
 }
 
-.container{    padding-left: 25px;
-   padding-left: 25px;
-    padding-right: 25px;
+.container{    
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -321,7 +331,7 @@ START-BUTTON banner-btn-download{background-color:#146db3; color:#fff}
 
 .banner-section{min-height:auto !important;}
 .kamboz_row {
-    border-top: 2px solid #3e3e3e;
+    border-top: 1px solid #3e3e3e;
     border-bottom: 2px solid #3e3e3e;
 }
 .gray_border{ border-bottom:1px solid #bbb;}
@@ -344,8 +354,8 @@ h5 , h4 {    font-weight: normal !important;}
 .testimonial-box h3{ font-size:20px !important;font-weight:normal!important;letter-spacing: 1px;}
 .dfd-client-logo-wrap .dfd-client-logo-item .thumb-wrap{ padding:0px;}
 .thumb-wrap img {
-    width: 115px !important;
-    height: 70px !important;
+    width: 160px !important;
+    height: 60px !important;
    
 }
 .lang-sel.dfd-wpml-switcher a span:last-child {
@@ -395,8 +405,18 @@ span.wpcf7-form-control-wrap.text-883 input {
     width: 100% !important;
 }
 	
-
-
+.wpb_wrapper > p {
+  font-size: 16px;
+  color: #565656;
+}
+.wpb_wrapper > ul {
+  font-size: 16px;
+  color: #565656;
+}
+.table_room_col2 > a {
+  font-size: 16px;
+  color: #565656;
+}
 @media only screen and (max-width: 1250px)
 {
   .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
@@ -511,14 +531,7 @@ span.wpcf7-form-control-wrap.text-883 input {
     margin-top:0px;
 	  .dfd-logo-wrap{width:auto;margin-right: 0 !important;}
 }
-.columns.vc-column-responsive-59327d5e07025 {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-}
-.columns.vc-column-responsive-59328be243ee7 {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-}
+
 }
 @media only screen and (max-width: 768px)
 {
@@ -735,7 +748,13 @@ section#main-content {
 		  border-radius:4px !important;
   			text-align:center;
 }
-
+.vc_btn3.vc_btn3-style-outline-custom{
+          height: 70px;
+          width: 200px;
+}
+.vc_btn3.vc_btn3-size-sm.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+      padding-left: 25px !important;
+}
 @media screen and (max-width: 640px){
   /*add css to apply*/
   .header-top-panel{visibility: hidden;
@@ -787,6 +806,46 @@ section#main-content {
 	  padding: 6px 30px 6px 25px !important;
 
 	}
+.title-wrap > div {
+  color: #565656 !important
+}
+.vc_custom_1495190971612 {
+  left: -3% !important;
+	  }
+.entry-content > p {
+  color: #565656;
+}
+.entry-content > ul > li {
+  color: #565656;
+}
+.entry-content > ol > li {
+  color: #565656;
+}
+.entry-content > p,section{
+  color: #565656;
+}
+.entry-content > section > section > section{
+  color: #565656;
+}
+.entry-content > section > section > p{
+  color: #565656;
+}
+p,div{
+  color: #565656
+}
+.entry-content > div{
+  color: #565656		  
+}
+.vc_single_image-wrapper > img {
+  width: 250px !important;
+  height: 250px !important;
+}
+.dfd-single-image-module  image-center > img {
+  width: 250px !important;
+  height: 250px !important;
+}
+}
+	
 /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
   .header-top-panel{visibility: hidden;

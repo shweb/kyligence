@@ -14,17 +14,19 @@ get_header();
     min-height: 50px;}
   a.older{padding: 11px 35px; 
 	color:#2A2A2A;
-	border: 2px solid #2A2A2A;
+	border: 1px solid #2A2A2A;
+	border-radius:4px !important;
 	border-color: #2A2A2A;	
-    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chvr.png');
+    background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/chvr.png');
     background-repeat: no-repeat;
     background-position: -1px 3px; 
   }
   a.older:hover , :active .older{padding: 11px 35px;
-	border: 2px solid  #2A2A2A;
-    background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chevr-hover.png');
+	border: 1px solid  #2A2A2A;
+    background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/chevr-hover.png');
     background-repeat: no-repeat;
     background-position:-1px 3px; 
+	border-radius:4px !important;
 	color: #fff;
     background-color: #2A2A2A;
   }
@@ -32,7 +34,7 @@ get_header();
 	  position: absolute;
 	  width: 20px;
 	  content: " ";
-	  background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chvr.png');
+	  background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/chvr.png');
 	  height: 19px;
 	  background-position: -4px 28px;
 	  display: inline-block;
@@ -42,7 +44,7 @@ get_header();
 	position: absolute;
 	width: 20px;
 	content: " ";
-	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/chevr-hover.png');
+	background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/chevr-hover.png');
     height: 19px;
 	background-position: -4px 28px;
 	display: inline-block;
@@ -52,7 +54,7 @@ get_header();
 	  position: absolute;
 	  width: 25px;
 	  content: " ";
-	  background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/eyes.png');
+	  background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/eyes.png');
 	  height: 19px;
 	  background-position: -10px 33px;
 	  display: inline-block;
@@ -62,7 +64,7 @@ get_header();
 	position: absolute;
 	width: 25px;
 	content: " ";
-	background-image: url('http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/eyes-hover.png');
+	background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/eyes-hover.png');
     height: 19px;
 	background-position: -10px 33px;
 	display: inline-block;
@@ -75,9 +77,9 @@ get_header();
   .table_room{
 	border:none !important;
 	background:none;
-	width:52%;
+	width:100%;
 	display:block;
-	margin-left: auto;
+	margin-left: 15%;
 	margin-right: auto;
 }
 .table_room_col1{
@@ -100,7 +102,13 @@ get_header();
   width:400px;
   padding-left:132px;	
 	
- }  
+ }
+ #dfd-image-bg-592533d0b22a2{
+	background-image: url('<?php echo get_site_url();?>/wp-content/uploads/2017/05/底图.png');
+	background-repeat: repeat;
+	background-size: cover;
+	background-attachment: scroll;
+  }  
   
 </style>
 <?php
@@ -203,7 +211,7 @@ if($terms) {
         <?php
 }
 ?>
-<div class="vc_row vc-row-wrapper vc_custom_1495119536362" data-parallax_sense="30" style="padding:40px 0px">
+<div class="vc_row vc-row-wrapper vc_custom_1495119536362" data-parallax_sense="30" style="padding:40px 0px" id="dfd-image-bg-592533d0b22a2">
     <div class="wpb_row row">
         <div class="two columns vc-column-extra-class-592533d0ad570" data-parallax_sense="30">
             <div class="wpb_wrapper">
@@ -252,7 +260,7 @@ if($terms) {
                                              onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#000000';"
                                             style="border-color:#ffffff; color:#ffffff;"
                                             class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom banner_btn button"
-                                            onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?>http://kyligence.trustylabs.mg/why-kyligence/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>http://kyligence.trustylabs.mg/zh/why-kyligence/<?php endif; ?>'">
+                                            onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?><?php echo get_site_url();?>/why-kyligence/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?><?php echo get_site_url();?>/zh/why-kyligence/<?php endif; ?>'">
 											<?php if(ICL_LANGUAGE_CODE=='en'): ?>
 											  Why Kyligence
 											  <?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>
@@ -266,7 +274,7 @@ if($terms) {
                             <div class="wpb_wrapper">
                                 <div class="vc_btn3-container  banner_btn vc_btn3-center">
                                     <button onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
-                                            onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?>http://kyligence.trustylabs.mg/products/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>http://kyligence.trustylabs.mg/zh/products/<?php endif; ?>'"
+                                            onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?><?php echo get_site_url();?>/products/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?><?php echo get_site_url();?>/zh/products/<?php endif; ?>'"
                                              onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#000000';"
                                             style="border-color:#ffffff; color:#ffffff;"
                                             class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom banner_btn button">
@@ -287,7 +295,7 @@ if($terms) {
                                              onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#000000';"
                                             style="border-color:#ffffff; color:#ffffff;"
                                             class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom banner_btn button"
-                                            onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?>http://kyligence.trustylabs.mg/use-cases/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?>http://kyligence.trustylabs.mg/zh/use-cases/<?php endif; ?>'">
+                                            onClick="location.href='<?php if(ICL_LANGUAGE_CODE=='en'): ?><?php echo get_site_url();?>/use-cases/<?php elseif(ICL_LANGUAGE_CODE=='zh'): ?><?php echo get_site_url();?>/zh/use-cases/<?php endif; ?>'">
                                         
 											<?php if(ICL_LANGUAGE_CODE=='en'): ?>
 											  Use Cases
@@ -314,12 +322,10 @@ if($terms) {
     </div>
     <div class="dfd-row-bg-wrapper-cover">
         <div class="dfd-row-bg-wrap dfd-row-bg-image dfd_simple_image" id="dfd-image-bg-592533d0b22a2"
-             data-default-image="http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/底图.png"
-             data-mobile_enable="1"></div>
+             data-default-image="<?php echo get_site_url();?>/wp-content/uploads/2017/05/底图.png"
+             data-mobile_enable="1">
+	    </div>
     </div>
-    <script type="text/javascript">(function ($) {
-        $("head").append("<style>#dfd-image-bg-592533d0b22a2 {background-image: url(http://kyligence.trustylabs.mg/wp-content/uploads/2017/05/底图.png);background-repeat: repeat;background-size: cover;background-attachment: scroll;}</style>");
-    })(jQuery);</script>
 </div>
 <?php
 get_footer();

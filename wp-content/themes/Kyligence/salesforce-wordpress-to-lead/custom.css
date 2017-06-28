@@ -1,0 +1,71 @@
+#sf_form_salesforce_w2l_lead_2 input {
+    border-bottom: 1px solid #808694!important;
+    border: solid 1px #808694;
+    border-radius:5px;
+    padding-left: 40px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#sf_form_salesforce_w2l_lead_2 #sf_first_name {
+    background: transparent url('/wp-content/themes/Kyligence/img/name.png');
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+}
+
+#sf_form_salesforce_w2l_lead_2 #sf_last_name {
+    background: transparent url('/wp-content/themes/Kyligence/img/name.png');
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+}
+
+#sf_form_salesforce_w2l_lead_2 #sf_email {
+    background: transparent url('/wp-content/themes/Kyligence/img/email.png');
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+}
+
+#sf_form_salesforce_w2l_lead_2 #sf_phone {
+    background: transparent url('/wp-content/themes/Kyligence/img/phone.png');
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+}
+
+#sf_form_salesforce_w2l_lead_2 #sf_description {
+    border-bottom: 1px solid #808694!important;
+    border: solid 1px #808694;
+    border-radius:5px;
+    padding-left: 40px;
+    border-radius: 5px;
+    background: transparent url('/wp-content/themes/Kyligence/img/message.png');
+    background-repeat: no-repeat;
+    background-position: 5px 13px;
+    padding-left: 40px; 
+    height:150px;
+    padding-bottom: 15px;    border-radius: 5px;
+}
+
+#sf_form_salesforce_w2l_lead_2 input[name=w2lsubmit] {
+    background: #146db3;
+    color: #fff;
+    border-radius: 30px;
+    display: block;border-bottom: none!important;
+    border:none;
+    margin-top: 25px;    min-height:37px;margin:0 auto;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 176px;
+    line-height: normal;
+    letter-spacing: 1px;
+    font-style: normal;
+height: 45px !important;
+    min-height: 45px !important;
+font-size: 13px;
+    line-height: 13px;
+}
+
+#requiredfieldsmsg {
+    display: none;
+}

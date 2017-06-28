@@ -1,0 +1,14 @@
+2017-06-28T13:28:00+00:00 - MERGED:
+ - wp-plupload - /wp-includes/js/plupload/wp-plupload.min.js - unminified version used
+ - jquery-ui-core - /wp-includes/js/jquery/ui/core.min.js
+ - jquery-ui-widget - /wp-includes/js/jquery/ui/widget.min.js
+ - jquery-ui-mouse - /wp-includes/js/jquery/ui/mouse.min.js
+ - jquery-ui-sortable - /wp-includes/js/jquery/ui/sortable.min.js
+ - mediaelement - /wp-includes/js/mediaelement/mediaelement-and-player.min.js
+ - wp-mediaelement - /wp-includes/js/mediaelement/wp-mediaelement.min.js - unminified version used
+ - media-views - /wp-includes/js/media-views.min.js - unminified version used
+ - media-editor - /wp-includes/js/media-editor.min.js - unminified version used
+ - media-audiovideo - /wp-includes/js/media-audiovideo.min.js - unminified version used
+ - froogaloop - /wp-includes/js/mediaelement/froogaloop.min.js
+2017-06-28T13:28:02+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-06-28T13:28:03+00:00 - COMPRESSION COMPLETE - 134.41K saved

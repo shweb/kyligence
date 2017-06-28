@@ -1,0 +1,6 @@
+2017-06-28T12:51:26+00:00 - MERGED:
+ - wp-embed - /wp-includes/js/wp-embed.min.js - unminified version used
+ - sitepress - https://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js
+ - sfwp2ljqph - https://kyligence.io/wp-content/plugins/salesforce-wordpress-to-lead/assets/js/jquery-placeholder/jquery.placeholder.js
+2017-06-28T12:52:16+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-06-28T12:52:16+00:00 - COMPRESSION COMPLETE - 2.86K saved
