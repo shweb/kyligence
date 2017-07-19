@@ -1,0 +1,9 @@
+2017-07-01T10:33:31+00:00 - MERGED:
+ - buttons - /wp-includes/css/buttons.min.css
+ - dashicons - /wp-includes/css/dashicons.min.css
+ - mediaelement - /wp-includes/js/mediaelement/mediaelementplayer.min.css
+ - wp-mediaelement - /wp-includes/js/mediaelement/wp-mediaelement.min.css
+ - media-views - /wp-includes/css/media-views.min.css
+ - imgareaselect - /wp-includes/js/imgareaselect/imgareaselect.css
+2017-07-01T10:33:49+00:00 - COMPRESSING CSS
+2017-07-01T10:33:49+00:00 - COMPRESSION COMPLETE - 443.00B saved

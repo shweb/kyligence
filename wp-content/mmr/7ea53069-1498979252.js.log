@@ -1,0 +1,14 @@
+2017-07-02T07:07:32+00:00 - MERGED:
+ - jquery-form - https://kyligence.io/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js - unminified version used
+ - contact-form-7 - https://kyligence.io/wp-content/plugins/contact-form-7/includes/js/scripts.js
+ - cycle-two - https://kyligence.io/wp-content/plugins/gs-testimonial/assets/js/jquery.cycle2.min.js
+ - cycle-two-caro - https://kyligence.io/wp-content/plugins/gs-testimonial/assets/js/jquery.cycle2.carousel.js
+ - stickThis - https://kyligence.io/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/stickThis.js
+ - script - https://kyligence.io/wp-content/themes/Kyligence/assets/js/script.js
+ - dfd_js_plugins - https://kyligence.io/wp-content/themes/Kyligence/assets/js/plugins.min.js
+ - wpb_composer_front_js - https://kyligence.io/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js
+ - js-6 - http://kyligence.io/wp-content/mmr/71b408cc-1498979252.min.js
+2017-07-02T07:07:41+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-07-02T07:07:43+00:00 - COMPRESSION COMPLETE - 33.40K saved
+2017-07-02T07:10:30+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-07-02T07:10:32+00:00 - COMPRESSION COMPLETE - 33.40K saved

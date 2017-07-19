@@ -1,0 +1,13 @@
+2017-07-02T08:02:13+00:00 - MERGED:
+ - wp-embed - /wp-includes/js/wp-embed.min.js - unminified version used
+ - sitepress - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js
+ - underscore - /wp-includes/js/underscore.min.js
+ - shortcode - /wp-includes/js/shortcode.min.js - unminified version used
+ - utils - /wp-includes/js/utils.min.js - unminified version used
+ - backbone - /wp-includes/js/backbone.min.js
+ - wp-util - /wp-includes/js/wp-util.min.js - unminified version used
+ - wp-backbone - /wp-includes/js/wp-backbone.min.js - unminified version used
+ - media-models - /wp-includes/js/media-models.min.js - unminified version used
+ - plupload - /wp-includes/js/plupload/plupload.full.min.js
+2017-07-02T08:02:24+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-07-02T08:02:24+00:00 - COMPRESSION COMPLETE - 41.91K saved

@@ -1,0 +1,11 @@
+2017-07-01T10:33:31+00:00 - MERGED:
+ - underscore - /wp-includes/js/underscore.min.js
+ - shortcode - /wp-includes/js/shortcode.min.js - unminified version used
+ - utils - /wp-includes/js/utils.min.js - unminified version used
+ - backbone - /wp-includes/js/backbone.min.js
+ - wp-util - /wp-includes/js/wp-util.min.js - unminified version used
+ - wp-backbone - /wp-includes/js/wp-backbone.min.js - unminified version used
+ - media-models - /wp-includes/js/media-models.min.js - unminified version used
+ - plupload - /wp-includes/js/plupload/plupload.full.min.js
+2017-07-01T10:33:49+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-07-01T10:33:49+00:00 - COMPRESSION COMPLETE - 40.74K saved

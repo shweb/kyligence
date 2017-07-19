@@ -1,0 +1,7 @@
+2017-07-03T07:22:18+00:00 - MERGED:
+ - wp-embed - /wp-includes/js/wp-embed.min.js - unminified version used
+ - sitepress - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js
+ - jquery-ui-core - /wp-includes/js/jquery/ui/core.min.js
+ - jquery-ui-datepicker - /wp-includes/js/jquery/ui/datepicker.min.js
+2017-07-03T07:22:20+00:00 - COMPRESSING WITH MINIFY (PHP exec not available or java not found)
+2017-07-03T07:22:20+00:00 - COMPRESSION COMPLETE - 1.62K saved

@@ -1,0 +1,9 @@
+2017-07-12T01:22:20+00:00 - MERGED:
+ - buttons - /wp-includes/css/buttons.min.css
+ - mediaelement - /wp-includes/js/mediaelement/mediaelementplayer.min.css
+ - wp-mediaelement - /wp-includes/js/mediaelement/wp-mediaelement.min.css
+ - media-views - /wp-includes/css/media-views.min.css
+ - imgareaselect - /wp-includes/js/imgareaselect/imgareaselect.css
+ - hugeicons - http://kyligence.io/wp-content/plugins/video-player/icon-fonts/css/hugeicons.css
+2017-07-12T01:22:22+00:00 - COMPRESSING CSS
+2017-07-12T01:22:23+00:00 - COMPRESSION COMPLETE - 7.27K saved

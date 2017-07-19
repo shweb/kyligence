@@ -1,0 +1,12 @@
+2017-07-12T03:55:33+00:00 - MERGED:
+ - dfd-dfd_icon_set - https://kyligence.io/wp-content/plugins/dfd-extensions/assets/fonts/dfd_icon_set/dfd_icon_set.css
+ - dashicons - /wp-includes/css/dashicons.min.css
+ - admin-bar - /wp-includes/css/admin-bar.min.css
+ - layerslider - https://kyligence.io/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css
+ - contact-form-7 - https://kyligence.io/wp-content/plugins/contact-form-7/includes/css/styles.css
+ - rs-plugin-settings - https://kyligence.io/wp-content/plugins/revslider/public/assets/css/settings.css
+ - wpml-legacy-horizontal-list-0 - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.css
+ - yoast-seo-adminbar - https://kyligence.io/wp-content/plugins/wordpress-seo/css/adminbar-471.min.css
+ - js_composer_front - https://kyligence.io/wp-content/plugins/js_composer/assets/css/js_composer.min.css
+2017-07-12T03:55:35+00:00 - COMPRESSING CSS
+2017-07-12T03:55:35+00:00 - COMPRESSION COMPLETE - 5.37K saved

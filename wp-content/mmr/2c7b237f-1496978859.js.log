@@ -1,0 +1,6 @@
+2017-07-03T15:02:35+00:00 - MERGED:
+ - jquery-core - /wp-includes/js/jquery/jquery.js
+ - jquery-migrate - /wp-includes/js/jquery/jquery-migrate.min.js - unminified version used
+ - jquery-form - /wp-includes/js/jquery/jquery.form.min.js - unminified version used
+ - jquery.cookie - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js
+ - wpml-browser-redirect - http://kyligence.io/wp-content/plugins/sitepress-multilingual-cms/res/js/browser-redirect.js
