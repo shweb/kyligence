@@ -833,6 +833,30 @@ section#main-content {
 p,div{
   color: #565656
 }
+.posts span,.posts p, .posts li,.posts a,pre p, pre+p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #505050!important;
+  font-family: 'Segoe UI Condensed','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif!important;
+  letter-spacing: 0px;
+}
+.posts a {
+  color: #0072c6!important;
+}
+.posts h4 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+.posts li strong {
+  font-size: 20px;
+}
+.posts ul {
+  list-style-type: disc;
+}
+.posts p strong {
+  font-size: 20px;
+}
 .entry-content > div{
   color: #565656		  
 }
