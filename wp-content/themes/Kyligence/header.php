@@ -3,7 +3,7 @@
 <html class="no-ie" <?php language_attributes(); ?>> <!--<![endif]-->
 	<head>
 		
-		<meta name="robots" content="noindex">       <meta name="googlebot" content="noindex">
+		<meta name="robots" content="noindex">       <meta name="googlebot" content="index,">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">		
 
 		<?php
@@ -101,6 +101,7 @@
     })(jQuery);
 	  </script>
 	  <script>
+		//int aw=jQuery(this).width();
 		var change = null;
          jQuery(document).ready(function(){
 		 
@@ -118,10 +119,37 @@
 		 {
 		   jQuery('.sider_menu').css('display','none');
 		   jQuery('.fixed').css('display','none');
+		    var huhu=jQuery(this).width();
+		   var huhu1=(huhu/2)-110;
+		   //jQuery('.style_01').css('margin-left',huhu1+'px');
+		   
 			  		 
 		 }else{
-		   jQuery('.sider_menu').css('display','block');
-		   jQuery('.fixed').css('display','block');
+		   var larg = (document.body.clientWidth);
+		   var aw=jQuery(this).width();//fixed
+		   var caw=(aw-1020)/2;
+		   var bw=jQuery(this).width();//sidermenu
+		   var baw=((bw-1020)/2)-5;
+		   var daw=((bw)/2)-114.5;
+		   console.log(daw);
+		   console.log(caw);
+		   
+		   console.log(larg);
+		   console.log(baw);
+		   //jQuery('.sider_menu').css('display','block');
+		   //jQuery('.fixed').css('display','block'); 
+		   jQuery('.sider_menu').css({'display':'block','margin-left': baw+'px'});
+		   jQuery('.fixed').css({'display':'block','margin-left': caw+'px'});
+		   //jQuery('.style_01').css({'margin-left':daw+'px','margin-top':'-100px'});
+		   
+		   
+		   
+		   /*eto*/
+		   
+		   //jQuery('.sider_menu').css('margin-left','(100%-1020px)');
+		   
+		   
+		   /*eto*/
 		 } 
 		   
          jQuery(window).scroll(function()
@@ -156,6 +184,7 @@
 		 
 		 });
 	  </script>
+	  
 
 	</head>
 	<?php
